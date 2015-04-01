@@ -1,3 +1,5 @@
+"use strict";
+
 $(window).on('load',function(){
 
   $('#toggle').on('click', function(e){
