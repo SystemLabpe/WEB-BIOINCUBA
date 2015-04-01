@@ -1,5 +1,8 @@
 {
   "name": "web-bioincuba",
   "version": "0.0.1",
-  "dependencies": {}
+  "dependencies": {
+    "normalize.css": "~3.0.3",
+    "bootstrap": "~3.3.4"
+  }
 }
