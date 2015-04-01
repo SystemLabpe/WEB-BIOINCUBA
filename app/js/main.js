@@ -5,7 +5,6 @@ $(window).on('load',function(){
 
     if ($('#toggle').hasClass('open')) {
       $('#menu nav').slideDown(500);
-      $('#menu nav').css('visibility', 'visible');
     } else {
       $('#menu nav').slideUp(500, function(){
         $(this).removeAttr('style');

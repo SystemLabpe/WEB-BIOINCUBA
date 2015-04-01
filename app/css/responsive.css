@@ -3,10 +3,12 @@
   #menu nav {
     display: none;
     position: static;
-    background:#bba454;
+    background:#fff;
   }
     #menu nav ul {
       margin: 0;
+      padding: 0;
+      text-align: center;
     }
 
       #menu nav ul li {
@@ -21,8 +23,8 @@
           display: block;
           width: 100%;
           height: auto;
-          margin-left: 15px;
-          text-align: center;
+          border-top: 1px solid #2F3238;
+          border-width: 50%;
         }
 
   #toggle {
@@ -38,7 +40,7 @@
   }
 
   #toggle:hover {
-    color: #bba454;
+    color: #2F3238;
   }
 
 
