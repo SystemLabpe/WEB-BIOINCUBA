@@ -2,7 +2,7 @@
 
 $(window).on('load',function(){
 
-  $('#toggle').on('click', function(e){
+  $('#toggle').on('click', function(){
     $(this).toggleClass('open');
 
     if ($('#toggle').hasClass('open')) {
@@ -12,13 +12,13 @@ $(window).on('load',function(){
         $(this).removeAttr('style');
       });
     }
-
-    e.preventDefault();
   });
 
-  /*$('#menu-nav-mobile a').on('click', function(){
-    $('#mobile-nav').removeClass('open');
-    $('#navigation-mobile').slideUp(350, 'easeOutExpo');
-  });*/
+  $('#menu nav ul li a').on('click', function(){
+    $('toggle').removeClass('open');
+    $('#menu nav').slideUp(500, function(){
+      $(this).removeAttr('style');
+    });
+  });
 
 });
