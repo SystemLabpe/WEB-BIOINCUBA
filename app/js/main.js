@@ -14,24 +14,26 @@ $(window).on('load',function(){
     }
   });
 
+
   $('#menu nav ul li a').on('click', function(){
-    $('toggle').removeClass('open');
-    $('#menu nav').slideUp(500, function(){
-      $(this).removeAttr('style');
-    });
+    if ($('#toggle').hasClass('open')) {
+      $('#toggle').removeClass('open');
+      $('#menu nav').slideUp(500, function(){
+        $(this).removeAttr('style');
+      });
+    }
   });
 
-  /*
+
   $('a[href^="#"]').on('click', function(e) {
-    alert('gogo');
-    var target = $(this.href);
+    var target = $(this.hash);
     if( target.length ) {
         e.preventDefault();
         $('html, body').animate({
             scrollTop: target.offset().top
-        }, 1000);
+        }, 2000);
     }
   });
-*/
+
 
 });
