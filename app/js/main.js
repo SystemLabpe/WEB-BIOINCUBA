@@ -21,4 +21,17 @@ $(window).on('load',function(){
     });
   });
 
+  /*
+  $('a[href^="#"]').on('click', function(e) {
+    alert('gogo');
+    var target = $(this.href);
+    if( target.length ) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    }
+  });
+*/
+
 });
