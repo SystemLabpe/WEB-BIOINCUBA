@@ -1,5 +1,8 @@
 @media only screen and (max-width: 768px){
 
+/* ==================================================
+   Header
+================================================== */
   #menu nav {
     display: none;
     position: static;
@@ -43,5 +46,24 @@
     color: #2F3238;
   }
 
+  /* ==================================================
+   Home
+================================================== */
+  .home-content{
+    top: 20%;
+  }
+  .home-wrap .home-content h2 {
+    font-size: 50px;
+  }
+
+  .home-wrap .home-content p {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .buttons button{
+    padding: 10px 23px;
+    margin: 5px;
+  }
 
 }
