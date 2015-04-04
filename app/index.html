@@ -2,11 +2,21 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+
+  <!-- Mobile Specifics -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="HandheldFriendly" content="true"/>
+  <meta name="MobileOptimized" content="320"/>
+
+  <!-- Mobile Internet Explorer ClearType Technology -->
+  <!--[if IEMobile]>  <meta http-equiv="cleartype" content="on">  <![endif]-->
+
   <title>BioIncuba</title>
   <!-- bower:css -->
   <link rel="stylesheet" href="lib/normalize.css/normalize.css" />
   <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
   <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.css" />
+  <link rel="stylesheet" href="lib/bxslider-4/jquery.bxslider.css" />
   <!-- endbower -->
   <!-- inject:css -->
   <link rel="stylesheet" href="/css/main.css">
@@ -66,70 +76,66 @@
       <div class="row">
         <h2>Mentores</h2>
       </div>
-      <div class="row">
-        <div class="col-md-3 col-sm-6 mentor">
-          <img class="img-responsive mentor-pic" src="img/mentors/1.jpg"></img>
-          <h4>John Doe</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
-          quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.adipiscing vitae vel quam proin eget mauris eget.</p>
+      <div class="mentors-slider">
+        <div class="slide mentor">
+           <img class="img-responsive mentor-pic" src="img/mentors/1.jpg"></img>
+            <h4>John Doe</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
+               quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.adipiscing vitae vel quam proin eget mauris eget.</p>
         </div>
-        <div class="col-md-3 col-sm-6 mentor">
-          <img class="img-responsive mentor-pic" src="img/mentors/2.jpg"></img>
-          <h4>Diana Perterse</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
-          quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.adipiscing vitae vel quam proin eget mauris eget.</p>
+        <div class="slide mentor">
+           <img class="img-responsive mentor-pic" src="img/mentors/2.jpg"></img>
+            <h4>Diana Perterse</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
+               quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.adipiscing vitae vel quam proin eget mauris eget.</p>
         </div>
-        <div class="col-md-3 col-sm-6 mentor">
-          <img class="img-responsive mentor-pic" src="img/mentors/3.jpg"></img>
-          <h4>Larry Parker</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
-          quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.adipiscing vitae vel quam proin eget mauris eget.</p>
+        <div class="slide mentor">
+           <img class="img-responsive mentor-pic" src="img/mentors/3.jpg"></img>
+            <h4>Larry Parker</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
+               quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.adipiscing vitae vel quam proin eget mauris eget.</p>
         </div>
-        <div class="col-md-3 col-sm-6 mentor">
-          <img class="img-responsive mentor-pic" src="img/mentors/4.jpg"></img>
-          <h4>Ashley Simmons</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
-          quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.adipiscing vitae vel quam proin eget mauris eget.</p>
+        <div class="slide mentor">
+           <img class="img-responsive mentor-pic" src="img/mentors/4.jpg"></img>
+            <h4>Ashley Simmons</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
+               quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.adipiscing vitae vel quam proin eget mauris eget.</p>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-3 col-sm-6 mentor">
-          <img class="img-responsive mentor-pic" src="img/mentors/1.jpg"></img>
-          <h4>John Doe</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
-          quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.adipiscing vitae vel quam proin eget mauris eget.</p>
+        <div class="slide mentor">
+           <img class="img-responsive mentor-pic" src="img/mentors/1.jpg"></img>
+            <h4>John Doe 2</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
+               quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.adipiscing vitae vel quam proin eget mauris eget.</p>
         </div>
-        <div class="col-md-3 col-sm-6 mentor">
-          <img class="img-responsive mentor-pic" src="img/mentors/2.jpg"></img>
-          <h4>Diana Perterse</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
-          quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.adipiscing vitae vel quam proin eget mauris eget.</p>
+        <div class="slide mentor">
+           <img class="img-responsive mentor-pic" src="img/mentors/2.jpg"></img>
+            <h4>Diana Perterse 2</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
+               quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.adipiscing vitae vel quam proin eget mauris eget.</p>
         </div>
-        <div class="col-md-3 col-sm-6 mentor">
-          <img class="img-responsive mentor-pic" src="img/mentors/3.jpg"></img>
-          <h4>Larry Parker</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
-          quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.adipiscing vitae vel quam proin eget mauris eget.</p>
+        <div class="slide mentor">
+           <img class="img-responsive mentor-pic" src="img/mentors/3.jpg"></img>
+            <h4>Larry Parker 2</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
+               quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.adipiscing vitae vel quam proin eget mauris eget.</p>
         </div>
-        <div class="col-md-3 col-sm-6 mentor">
-          <img class="img-responsive mentor-pic" src="img/mentors/4.jpg"></img>
-          <h4>Ashley Simmons</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
-          quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.adipiscing vitae vel quam proin eget mauris eget.</p>
+        <div class="slide mentor">
+           <img class="img-responsive mentor-pic" src="img/mentors/4.jpg"></img>
+            <h4>Ashley Simmons 2</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
+               quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.adipiscing vitae vel quam proin eget mauris eget.</p>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-3 col-md-offset-3 col-sm-6 mentor">
-          <img class="img-responsive mentor-pic" src="img/mentors/1.jpg"></img>
-          <h4>John Doe</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
-          quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.adipiscing vitae vel quam proin eget mauris eget.</p>
+        <div class="slide mentor">
+           <img class="img-responsive mentor-pic" src="img/mentors/1.jpg"></img>
+            <h4>John Doe 3</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
+               quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.adipiscing vitae vel quam proin eget mauris eget.</p>
         </div>
-        <div class="col-md-3 col-sm-6 mentor">
-          <img class="img-responsive mentor-pic" src="img/mentors/2.jpg"></img>
-          <h4>Diana Perterse</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
-          quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.adipiscing vitae vel quam proin eget mauris eget.</p>
+        <div class="slide mentor">
+           <img class="img-responsive mentor-pic" src="img/mentors/2.jpg"></img>
+            <h4>Diana Perterse 3</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
+               quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.adipiscing vitae vel quam proin eget mauris eget.</p>
         </div>
       </div>
     </div>
@@ -149,6 +155,7 @@
   <!-- bower:js -->
   <script src="lib/jquery/dist/jquery.js"></script>
   <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="lib/bxslider-4/jquery.bxslider.js"></script>
   <!-- endbower -->
   <!-- inject:js -->
   <script src="/js/main.js"></script>
