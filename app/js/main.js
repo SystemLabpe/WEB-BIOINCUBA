@@ -91,6 +91,10 @@ $(window).on('load',function(){
     }
   });
 
+  $(' #proyect-list > li ').each( function() {
+    $(this).hoverdir();
+  });
+
 });
 /*
 $(window).on('scroll',function(){
