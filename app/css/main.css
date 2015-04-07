@@ -170,6 +170,37 @@ a, a:hover{
   padding-top: 20px;
 }
 
+#Grid {
+  width: 640px;
+  text-align: justify;
+  font-size: 0.1px;
+}
+
+#Grid:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+#Grid .mix {
+  display: none;
+  opacity: 0;
+  width: 200px;
+  height: 200px;
+  vertical-align: top;
+  margin-bottom: 20px;
+  background: #ccc;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  line-height: 200px;
+}
+
+#Grid .gap {
+  display: inline-block;
+  width: 200px;
+}
+
 /* ==================================================
    Services
 ================================================== */
