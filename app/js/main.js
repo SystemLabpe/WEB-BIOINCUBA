@@ -1,5 +1,7 @@
 "use strict";
-/*
+
+var main = $('body');
+var currentCls = 'home';
 var sections = {
   home: $('#home'),
   about_us: $('#about-us'),
@@ -10,7 +12,39 @@ var sections = {
   benefits: $('#benefits'),
   faq: $('#faq'),
   contact: $('#contact'),
-};*/
+};
+
+function isScrolledIntoView(c) {
+  var e = $(window).scrollTop();
+  var d = e + $(window).height();
+  var a = $(c).offset().top;
+  return ((a <= d) && (a >= e));
+}
+
+function checkActive(a) {
+  var c = a.data('class');
+  console.log('C -> ',c);
+  console.log('CURRENT CLASS -> ',currentCls);
+  if (c !== currentCls && isScrolledIntoView(a)) {
+    //main.toggleClass(currentCls + " " + a.data("class"));
+    main.removeClass();
+    main.attr('class',c);
+    currentCls = a.data("class");
+  }
+}
+
+function _onScroll(){
+  for (var section in sections) {
+    var a = sections[section];
+    if (sections.hasOwnProperty(section)) {
+      checkActive(a);
+    }
+  }
+}
+
+$(window).on('scroll',function(){
+  _onScroll();
+});
 
 $(window).on('load',function(){
 
@@ -91,20 +125,6 @@ $(window).on('load',function(){
     }
   });
 
+  _onScroll();
+
 });
-/*
-$(window).on('scroll',function(){
-  var currentCls = "home";
-  for (var section in sections) {
-    var a = sections[section];
-    if (sections.hasOwnProperty(section)) {
-      var c = section.data("class");
-      if (c != currentCls && this.isScrolledIntoView(a)) {
-        this._main.toggleClass(this._currentCls + " " + a.data("class"));
-        this._currentCls = a.data("class");
-        var b = this._currentCls;
-      }
-      console.log('SECTION -> ',section);
-    }
-  }
-});*/
