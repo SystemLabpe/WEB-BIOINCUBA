@@ -163,13 +163,15 @@
         <div class="col-md-4">
           <form id="form-contact">
           <div class="col-md-6">
-            <input type="text" class="form-control" placeholder="Nombre">
-            <input type="mail" class="form-control" placeholder="Email">
-            <input type="text" class="form-control" placeholder="Asunto">
+            <input id="contact_name" type="text" class="form-control" placeholder="Nombre">
+            <input id="contact_email" type="mail" class="form-control" placeholder="Email">
+            <input id="subject" type="text" class="form-control" placeholder="Asunto">
           </div>
           <div class="col-md-6">
-            <textarea class="form-control" placeholder="Mensaje"></textarea>
+            <textarea id="contact_message" class="form-control" placeholder="Mensaje"></textarea>
           </div>
+          <div id="response"></div>
+          <button class="btn col-md-12">Enviar</button>
           </form>
         </div>
         <div class="col-md-4">
