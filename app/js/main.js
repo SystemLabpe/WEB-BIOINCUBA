@@ -1,4 +1,16 @@
 "use strict";
+/*
+var sections = {
+  home: $('#home'),
+  about_us: $('#about-us'),
+  processes: $('#processes'),
+  projects: $('#projects'),
+  services: $('#services'),
+  mentors: $('#mentors'),
+  benefits: $('#benefits'),
+  faq: $('#faq'),
+  contact: $('#contact'),
+};*/
 
 $(window).on('load',function(){
 
@@ -80,3 +92,19 @@ $(window).on('load',function(){
   });
 
 });
+/*
+$(window).on('scroll',function(){
+  var currentCls = "home";
+  for (var section in sections) {
+    var a = sections[section];
+    if (sections.hasOwnProperty(section)) {
+      var c = section.data("class");
+      if (c != currentCls && this.isScrolledIntoView(a)) {
+        this._main.toggleClass(this._currentCls + " " + a.data("class"));
+        this._currentCls = a.data("class");
+        var b = this._currentCls;
+      }
+      console.log('SECTION -> ',section);
+    }
+  }
+});*/

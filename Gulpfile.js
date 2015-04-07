@@ -23,7 +23,7 @@ gulp.task('server', function() {
 
 // Busca errores en el JS y nos los muestra por pantalla
 gulp.task('jshint', function() {
-  return gulp.src('./app/js/**/*.js')
+  return gulp.src('./app/js/*.js')
   .pipe(jshint('.jshintrc'))
   .pipe(jshint.reporter('jshint-stylish'))
   .pipe(jshint.reporter('fail'));
