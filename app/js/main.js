@@ -121,7 +121,7 @@ $(window).on('load',function(){
                         { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
                         { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : false}
                     ],
-                    'tags'          : ['Self Portrait']
+                    'tags'          : ['Pre-Incubacion']
                 },
                 {
                     'title'         : 'Swiss chard pumpkin',
@@ -133,7 +133,7 @@ $(window).on('load',function(){
                         { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
                         { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
                     ],
-                    'tags'          : ['Landscape']
+                    'tags'          : ['Incubacion']
                 },
                 {
                     'title'         : 'Spinach winter purslane',
@@ -145,7 +145,7 @@ $(window).on('load',function(){
                         { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
                         { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
                     ],
-                    'tags'          : ['Self Portrait', 'Landscape']
+                    'tags'          : ['Aceleracion']
                 },
                 {
                     'title'         : 'Aubergine napa cabbage',
@@ -157,7 +157,7 @@ $(window).on('load',function(){
                         { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
                         { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
                     ],
-                    'tags'          : ['Portrait']
+                    'tags'          : ['Pre-Incubacion']
                 },
                 {
                     'title'         : 'Swiss chard pumpkin',
@@ -169,7 +169,7 @@ $(window).on('load',function(){
                         { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
                         { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
                     ],
-                    'tags'          : ['Landscape']
+                    'tags'          : ['Incubacion']
                 },
                 {
                     'title'         : 'Spinach winter purslane',
@@ -181,7 +181,7 @@ $(window).on('load',function(){
                         { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
                         { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
                     ],
-                    'tags'          : ['Vintage']
+                    'tags'          : ['Aceleracion']
                 },
                 {
                     'title'         : 'Spinach winter purslane',
@@ -193,7 +193,7 @@ $(window).on('load',function(){
                         { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
                         { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
                     ],
-                    'tags'          : ['Portrait']
+                    'tags'          : ['Pre-Incubacion']
                 },
                 {
                     'title'         : 'Azuki bean',
@@ -205,7 +205,7 @@ $(window).on('load',function(){
                         { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
                         { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
                     ],
-                    'tags'          : ['Vintage']
+                    'tags'          : ['Incubacion']
                 },
                 {
                     'title'         : 'Swiss chard pumpkin',
@@ -217,7 +217,7 @@ $(window).on('load',function(){
                         { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
                         { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
                     ],
-                    'tags'          : ['Landscape']
+                    'tags'          : ['Aceleracion']
                 },
                 {
                     'title'         : 'Winter purslane',
@@ -229,7 +229,7 @@ $(window).on('load',function(){
                         { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
                         { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
                     ],
-                    'tags'          : ['Portrait']
+                    'tags'          : ['Pre-Incubacion']
                 },
                 {
                     'title'         : 'Spinach winter purslane',
@@ -241,7 +241,7 @@ $(window).on('load',function(){
                         { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
                         { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
                     ],
-                    'tags'          : ['Vintage']
+                    'tags'          : ['Incubacion']
                 },
                 {
                     'title'         : 'Spinach winter purslane',
@@ -253,7 +253,7 @@ $(window).on('load',function(){
                         { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
                         { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
                     ],
-                    'tags'          : ['Portrait', 'Landscape']
+                    'tags'          : ['Aceleracion']
                 },
                 {
                     'title'         : 'Azuki bean',
@@ -265,7 +265,7 @@ $(window).on('load',function(){
                         { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
                         { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
                     ],
-                    'tags'          : ['Vintage']
+                    'tags'          : ['Incubacion']
                 },
                 {
                     'title'         : 'Swiss chard pumpkin',
@@ -277,7 +277,7 @@ $(window).on('load',function(){
                         { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
                         { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
                     ],
-                    'tags'          : ['Landscape']
+                    'tags'          : ['Incubacion']
                 },
                 {
                     'title'         : 'Spinach winter purslane',
@@ -289,7 +289,7 @@ $(window).on('load',function(){
                         { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
                         { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
                     ],
-                    'tags'          : ['Vintage', 'Landscape']
+                    'tags'          : ['Incubacion']
                 }
 
             ]
