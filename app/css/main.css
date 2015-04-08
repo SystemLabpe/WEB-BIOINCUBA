@@ -95,12 +95,12 @@ a, a:hover{
 #home {
   color: #fff;
   text-align: center;
+  width: 100%;
+  height: 600px;
 }
 
 .home-wrap {
-  position: relative;
-  width: 100%;
-  height: 100%;
+  /*position: relative;*/
 }
 
 .home-content{
