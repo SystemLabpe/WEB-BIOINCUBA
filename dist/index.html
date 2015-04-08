@@ -12,17 +12,7 @@
   <!--[if IEMobile]>  <meta http-equiv="cleartype" content="on">  <![endif]-->
 
   <title>BioIncuba</title>
-  <!-- bower:css -->
-  <link rel="stylesheet" href="lib/normalize.css/normalize.css" />
-  <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
-  <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.css" />
-  <link rel="stylesheet" href="lib/bxslider-4/jquery.bxslider.css" />
-  <!-- endbower -->
-  <!-- inject:css -->
-  <link rel="stylesheet" href="/css/elastic_grid.css">
-  <link rel="stylesheet" href="/css/main.css">
-  <link rel="stylesheet" href="/css/responsive.css">
-  <!-- endinject -->
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
    <!-- Header -->
@@ -71,7 +61,6 @@
 
   <section id="projects" data-class="projects">
     <h2>Proyectos</h2>
-    <div id="project-list"></div>
   </section>
 
   <section id="services" data-class="services">
@@ -163,17 +152,17 @@
             Teléfono: (511) 619 7700 anexo 3442</p>
         </div>
         <div class="col-md-4">
-          <form id="form-contact">
+          <form id="contact-form">
           <div class="col-md-6">
-            <input id="contact_name" type="text" class="form-control" placeholder="Nombre">
-            <input id="contact_email" type="mail" class="form-control" placeholder="Email">
-            <input id="subject" type="text" class="form-control" placeholder="Asunto">
+            <input id="contact_name" type="text" class="form-control" placeholder="Nombre" name="name">
+            <input id="contact_email" type="mail" class="form-control" placeholder="Email" name="email">
+            <input id="subject" type="text" class="form-control" placeholder="Asunto" name="subject">
           </div>
           <div class="col-md-6">
-            <textarea id="contact_message" class="form-control" placeholder="Mensaje"></textarea>
+            <textarea id="contact_message" class="form-control" placeholder="Mensaje" name="message"></textarea>
           </div>
-          <div id="response"></div>
-          <button class="btn col-md-12">Enviar</button>
+          <p id="response"></p>
+          <button id="contact-submit" class="btn col-md-12">Enviar</button>
           </form>
         </div>
         <div class="col-md-4">
@@ -189,18 +178,7 @@
     </div>
   </section>
   <footer></footer>
-
-  <!-- bower:js -->
-  <script src="lib/modernizr/modernizr.js"></script>
-  <script src="lib/jquery/dist/jquery.js"></script>
-  <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
-  <script src="lib/bxslider-4/jquery.bxslider.js"></script>
-  <!-- endbower -->
-  <!-- inject:js -->
-  <script src="/js/lib/jquery.elastislide.js"></script>
-  <script src="/js/lib/jquery.hoverdir.js"></script>
-  <script src="/js/lib/elastic_grid.js"></script>
-  <script src="/js/main.js"></script>
-  <!-- endinject -->
+  <script src="js/vendor.min.js"></script>
+  <script src="js/app.min.js"></script>
 </body>
 </html>
