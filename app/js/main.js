@@ -8,7 +8,7 @@ var mentors_slider = $('.mentors-slider').bxSlider({
   slideMargin: 10
 });
 
-$( window ).resize(function() {
+function mentors_resize() {
   var window_width = $(window).width();
   //behavior for mentors-slider
   if(window_width>991){
@@ -44,6 +44,10 @@ $( window ).resize(function() {
       slideMargin: 10
     });
   }
+}
+
+$( window ).resize(function() {
+  mentors_resize();
 });
 
 $(window).on('load',function(){
@@ -294,6 +298,5 @@ $(window).on('load',function(){
 
             ]
         });
-
-
+  mentors_resize();
 });
