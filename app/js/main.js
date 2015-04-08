@@ -3,7 +3,7 @@
 var mentors_slider = $('.mentors-slider').bxSlider({
   slideWidth: 220,
   minSlides: 1,
-  maxSlides: 4,
+  maxSlides: 5,
   moveSlides: 1,
   slideMargin: 10
 });
@@ -103,7 +103,7 @@ $(window).on('load',function(){
 
    $("#project-list").elastic_grid({
             'showAllText' : 'All',
-            'filterEffect': 'popup', // moveup, scaleup, fallperspective, fly, flip, helix , popup
+            'filterEffect': 'scaleup', // moveup, scaleup, fallperspective, fly, flip, helix , popup
             'hoverDirection': true,
             'hoverDelay': 0,
             'hoverInverse': false,
