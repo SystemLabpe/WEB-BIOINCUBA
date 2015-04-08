@@ -197,16 +197,16 @@ $(function() {
         //initial items
         var gridContent = "";
         var ulObject = $('<ul id="og-grid" class="og-grid"></ul>');
-        for (itemIdx = 0; itemIdx < numOfItems; itemIdx++) {
+        for (var itemIdx = 0; itemIdx < numOfItems; itemIdx++) {
             if(config.items[itemIdx] != undefined){
                 var item = config.items[itemIdx];
 
                 //initial new li
-                liObject = $('<li></li>');
+                var liObject = $('<li></li>');
 
                 //get tags
-                tags = item.tags;
-                strTag = "";
+                var tags = item.tags;
+                var strTag = "";
                 for (var i = tags.length - 1; i >= 0; i--) {
                     strTag += ","+tags[i];
                 };
@@ -214,19 +214,19 @@ $(function() {
                 liObject.attr('data-tags', strTag);
 
                 //initial a object
-                aObject = $('<a></a>');
+                var aObject = $('<a></a>');
                 aObject.attr('href', 'javascript:;;');
 
                 //initial default photo
-                imgObject = $('<img/>');
+                var imgObject = $('<img/>');
                 imgObject.attr('src', item.thumbnail[0]);
                 imgObject.attr('data-largesrc', item.large[0]);
 
 
                 //initial hover direction
-                spanObject = $('<span></span>');
+                var spanObject = $('<span></span>');
                 spanObject.html(item.title);
-                figureObject = $('<figure></figure>');
+                var figureObject = $('<figure></figure>');
                 figureObject.append(spanObject);
 
                 imgObject.appendTo(aObject);
@@ -258,7 +258,7 @@ $(function() {
     var porfolio_filter = container.find('#portfolio-filter');
     var items = ulObject.find('li'),
     itemsByTags = {};
-    numOfTag = 0;
+    var numOfTag = 0;
 
     // Looping though all the li items:
 
@@ -307,7 +307,7 @@ $(function() {
         $grid.find('li.og-expanded').find('a').trigger('click');
         $grid.find('.og-close').trigger('click');
 
-        $this = $(this);
+        var $this = $(this);
         $this.css('outline','none');
         porfolio_filter.find('.current').removeClass('current');
         $this.parent().addClass('current');
