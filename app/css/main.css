@@ -1,5 +1,5 @@
 html {
-  height: 100%;
+  /*height: 100%;*/
 }
 
 body {
@@ -31,7 +31,7 @@ a, a:hover{
   min-width: 480px;
   width: 100%;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: right center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -95,29 +95,34 @@ a, a:hover{
    Home
 ================================================== */
 #home {
-  background-color: black;
   color: #fff;
-  text-align: center;
   width: 100%;
-  height: 600px;
-}
-
-.home-wrap {
-  /*position: relative;*/
 }
 
 .home-content{
+  margin-top: 200px
+}
+
+.home-content h1 {
+  font-size: 28px;
+  line-height: 50px;
+  letter-spacing: 2px;
+}
+
+.home-content .title-middle {
   position: absolute;
-  top: 30%;
+  right: 0;
+  padding-right: 15px;
 }
 
-.home-wrap .home-content h2 {
-  font-size: 60px;
+.home-content h1 strong{
+  font-size: 36px;
 }
 
-.home-wrap .home-content p {
-  font-size: 20px;
-  line-height: 40px;
+.home-content .slogan {
+  display: block;
+  font-size: 18px;
+  text-align: center;
 }
 
 .home-content .buttons {

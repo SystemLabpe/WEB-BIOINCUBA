@@ -63,17 +63,23 @@
   /* ==================================================
    Home
 ================================================== */
+  #home {
+    color: #fff;
+    width: 100%;
+  }
+
   .home-content{
-    top: 20%;
+    top: 120px;
   }
 
-  .home-wrap .home-content h2 {
-    font-size: 50px;
-  }
-
-  .home-wrap .home-content p {
-    font-size: 25px;
+  .home-content h1 {
+    font-size: 20px;
     line-height: 30px;
+    letter-spacing: 0;
+  }
+
+  .home-content h1 strong{
+    font-size: 22px;
   }
 
   .buttons button{
