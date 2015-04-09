@@ -5,6 +5,7 @@ html {
 body {
   background: #fff;
   height: 100%;
+  font-family:"Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 h2 {
@@ -43,18 +44,18 @@ a, a:hover{
 #menu {
   position: fixed;
   z-index: 10000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  background: #ECECEC;
+  left: 5%;
+  top: 3%;
+  width: 90%;
+  background: transparent;
   color:  #F8B102;
   height: 3em;
   line-height: 3em;
-  box-shadow: 0 0 0.15em 0 rgba(0,0,0,0.1);
   font-size: 18px;
+  font-weight: 600;
 }
 
-#logoMenu{
+#logoMenu {
   margin-top: 0;
   margin-left: 15px;
   cursor: pointer;
@@ -94,6 +95,7 @@ a, a:hover{
    Home
 ================================================== */
 #home {
+  background-color: black;
   color: #fff;
   text-align: center;
   width: 100%;

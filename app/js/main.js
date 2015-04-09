@@ -1,5 +1,11 @@
 "use strict";
 
+$( window ).scroll(function() {
+  if($(this).scrollTop()>=$('#home-content').position().top){
+      //alert($(this).scrollTop()+" "+$('#home-content').position().top);
+    }
+});
+
 var mentors_slider = $('.mentors-slider').bxSlider({
   slideWidth: 220,
   minSlides: 1,
@@ -106,7 +112,7 @@ $(window).on('load',function(){
   });
 
    $("#project-list").elastic_grid({
-            'showAllText' : 'All',
+            'showAllText' : 'Todos',
             'filterEffect': 'scaleup', // moveup, scaleup, fallperspective, fly, flip, helix , popup
             'hoverDirection': true,
             'hoverDelay': 0,
@@ -298,5 +304,9 @@ $(window).on('load',function(){
 
             ]
         });
+
   mentors_resize();
+
+
+
 });

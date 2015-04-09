@@ -269,7 +269,7 @@ $(function() {
         // Adding a data-id attribute. Required by the Quicksand plugin:
         elem.attr('data-id',i);
 
-        elem.addClass('all');
+        elem.addClass('todos');
         $.each(tags,function(key,value){
             // Removing extra whitespace:
             value = $.trim(value);
