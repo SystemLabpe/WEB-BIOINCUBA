@@ -3,6 +3,7 @@
 $( window ).scroll(function() {
   if($(this).scrollTop()>=$('#home-content').position().top){
       //alert($(this).scrollTop()+" "+$('#home-content').position().top);
+
     }
 });
 
