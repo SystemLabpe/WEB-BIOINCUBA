@@ -24,6 +24,16 @@ var mentors_slider = $('.mentors-slider').bxSlider({
 
 var fixed_menu_active = false;
 
+function changeBackground(c){
+  main.removeClass();
+  main.attr('class',c);
+}
+
+function changeOptionSelected(){
+  $('#menu nav>ul>li>a').removeClass('option-selected');
+  $('#menu nav ul li a[href="#'+currentCls+'"]').addClass('option-selected');
+}
+
 function isScrolledIntoView(c) {
   var e = $(window).scrollTop();
   var d = e + $(window).height();
@@ -31,24 +41,49 @@ function isScrolledIntoView(c) {
   return ((a <= d) && (a >= e));
 }
 
+function isScrolledOnView(c) {
+  var e = $(window).scrollTop();
+  var d = e + $(window).height();
+  var a = $(c).offset().top;
+  return ((a >= d) && (a <= e));
+}
+
 function checkActive(a) {
   var c = a.data('class');
-  //console.log('C -> ',c);
-  //console.log('CURRENT CLASS -> ',currentCls);
-  if (c !== currentCls && isScrolledIntoView(a)) {
-    //main.toggleClass(currentCls + " " + a.data("class"));
-    main.removeClass();
-    main.attr('class',c);
-    currentCls = a.data("class");
+  console.log('C -> ',c);
+  console.log('CURRENT CLASS -> ',currentCls);
+  if (c !== currentCls) {
+    if(isScrolledIntoView(a)){
+      changeBackground(c);
+      currentCls = a.data("class");
+    }
+    if(isScrolledOnView(a)){
+      changeBackground(c);
+    }
+
+    changeOptionSelected();
   }
 }
 
-function changeBackground(){
+function onchangeSection(){
   for (var section in sections) {
     var a = sections[section];
     if (sections.hasOwnProperty(section)) {
       checkActive(a);
     }
+  }
+}
+
+function displayHeader() {
+  if($(window).scrollTop()>=$('#home-content').position().top){
+    fixed_menu_active = true;
+    $('#menu').addClass("fixed-menu");
+    $('#logoMenu').addClass("fixed-logoMenu");
+  }else{
+    fixed_menu_active = false;
+    $('#menu nav>ul>li>a').removeClass('option-selected');
+    $('#menu').removeClass("fixed-menu");
+    $('#logoMenu').removeClass("fixed-logoMenu");
   }
 }
 
@@ -90,22 +125,9 @@ function mentors_resize() {
   }
 }
 
-function display_header() {
-  if($(window).scrollTop()>=$('#home-content').position().top){
-    fixed_menu_active = true;
-    $('#menu').addClass("fixed-menu");
-    $('#logoMenu').addClass("fixed-logoMenu");
-  }else{
-    fixed_menu_active = false;
-    $('#menu nav>ul>li>a').removeClass('option-selected');
-    $('#menu').removeClass("fixed-menu");
-    $('#logoMenu').removeClass("fixed-logoMenu");
-  }
-}
-
 $( window ).scroll(function() {
-  display_header();
-  changeBackground();
+  displayHeader();
+  onchangeSection();
 });
 
 $( window ).resize(function() {
@@ -373,7 +395,7 @@ $(window).on('load',function(){
         });
 
 changeBackground();
-display_header();
+displayHeader();
 mentors_resize();
 
 });
