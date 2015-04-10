@@ -22,7 +22,7 @@ var mentors_slider = $('.mentors-slider').bxSlider({
   slideMargin: 10
 });
 
-var is_not_home_section = false;
+var fixed_menu_active = false;
 
 function isScrolledIntoView(c) {
   var e = $(window).scrollTop();
@@ -92,24 +92,14 @@ function mentors_resize() {
 
 function display_header() {
   if($(window).scrollTop()>=$('#home-content').position().top){
-    is_not_home_section = true;
-    $('#menu').css(
-      { "left": "0",
-        "top": "0",
-        "width": "100%",
-        "background": "#ECECEC",
-        "color":  "#F8B102",
-        "box-shadow": "0 0 0.15em 0 rgba(0,0,0,0.1)",
-      }
-    );
-    $('#logoMenu').css("background-image","url('../img/logo-color250x60.png')");
+    fixed_menu_active = true;
+    $('#menu').addClass("fixed-menu");
+    $('#logoMenu').addClass("fixed-logoMenu");
   }else{
-    $('#menu').removeAttr('style');
-    $('#menu nav ul li a').removeAttr('style');
-    is_not_home_section = false;
-    if ($('#logoMenu').css("background-image")!=="url('../img/logo-250x60.png')") {
-      $('#logoMenu').css("background-image","url('../img/logo-250x60.png')");
-    }
+    fixed_menu_active = false;
+    $('#menu nav>ul>li>a').removeClass('option-selected');
+    $('#menu').removeClass("fixed-menu");
+    $('#logoMenu').removeClass("fixed-logoMenu");
   }
 }
 
@@ -136,7 +126,7 @@ $(window).on('load',function(){
   });
 
   $('#menu nav ul li a').hover(function(){
-    if(is_not_home_section){
+    if(fixed_menu_active){
       $(this).css("border-color","#F8B001");
     }else{
        $(this).css("border-color","");
@@ -146,16 +136,8 @@ $(window).on('load',function(){
   });
 
   $('#menu nav ul li a').on('click', function(){
-    $('#menu nav>ul>li>a').css(
-      { "background-color": "",
-        "color": "",
-      }
-    );
-    $(this).css(
-      { "background-color": "#F8B001",
-        "color": "#fff",
-      }
-    );
+    $('#menu nav>ul>li>a').removeClass('option-selected');
+    $(this).toggleClass('option-selected');
     if ($('#toggle').hasClass('open')) {
       $('#toggle').removeClass('open');
       $('#menu nav').slideUp(500, function(){
@@ -170,7 +152,7 @@ $(window).on('load',function(){
         e.preventDefault();
         $('html, body').animate({
             scrollTop: target.offset().top
-        }, 2000);
+        }, 1500);
     }
   });
 

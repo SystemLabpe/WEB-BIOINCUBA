@@ -3,19 +3,19 @@
 /* ==================================================
    Header
 ================================================== */
-  #menu nav {
+  .menu nav {
     display: none;
     position: static;
     background:#ECECEC;
   }
 
-  #menu nav ul {
+  .menu nav ul {
     margin: 0;
     padding: 0;
     text-align: center;
   }
 
-  #menu nav ul li {
+  .menu nav ul li {
     display: block;
     width: 100%;
     height: 40px;
@@ -23,7 +23,7 @@
     margin: 0;
   }
 
-  #menu nav ul li a {
+  .menu nav ul li a {
     display: block;
     width: 100%;
     height: auto;
@@ -31,7 +31,7 @@
     border-spacing: inherit;
   }
 
-  #menu nav ul li a:hover {
+  .menu nav ul li a:hover {
     background-color: #F8B001;
     color: #ECECEC;
   }
