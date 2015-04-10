@@ -81,7 +81,7 @@ body.faq #sections {
 /* ==================================================
    Header
 ================================================== */
-#menu {
+.menu {
   position: fixed;
   z-index: 10000;
   left: 5%;
@@ -95,7 +95,8 @@ body.faq #sections {
   font-weight: 600;
 }
 
-#logoMenu {
+.logoMenu {
+  display: inline-block;
   margin-top: 0;
   margin-left: 15px;
   background-image: url('../img/logo-250x60.png');
@@ -104,7 +105,7 @@ body.faq #sections {
   cursor: pointer;
 }
 
-#menu nav {
+.menu nav {
   margin-top: 1em;
   display: block;
   position: absolute;
@@ -112,17 +113,17 @@ body.faq #sections {
   top: 0;
 }
 
-#menu nav ul {
+.menu nav ul {
   margin: 0;
 }
 
-#menu nav ul li {
+.menu nav ul li {
   display: inline-block;
   margin-left: 0.5em;
   font-size: 0.8em;
 }
 
-#menu nav ul li a {
+.menu nav ul li a {
   display: block;
   color: inherit;
   border: 1px solid transparent;
@@ -132,11 +133,32 @@ body.faq #sections {
   outline: 0;
 }
 
-#menu nav ul li a:hover{
+.menu nav ul li a:hover {
   color: #F8B001;
 }
 
-#menu nav ul li a:active{
+.menu nav ul li a:active {
+  background-color: #F8B001;
+  color: #fff;
+}
+
+.fixed-menu {
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: #ECECEC;
+  color:  #F8B102;
+  box-shadow: 0 0 0.15em 0 rgba(0,0,0,0.1);
+}
+
+.fixed-logoMenu {
+  background-image: url('../img/logo-color200x48.png');
+  width: 200px;
+  height: 48px;
+  margin-top: 7px;
+}
+
+.menu nav ul li a.option-selected {
   background-color: #F8B001;
   color: #fff;
 }
