@@ -90,7 +90,7 @@ body.faq #sections {
   background: transparent;
   color:  #fff;
   height: 3.5em;
-  line-height: 3.5em;
+  line-height: 1.5em;
   font-size: 18px;
   font-weight: 600;
 }
@@ -105,6 +105,7 @@ body.faq #sections {
 }
 
 #menu nav {
+  margin-top: 1em;
   display: block;
   position: absolute;
   right: 1.5em;
@@ -124,17 +125,20 @@ body.faq #sections {
 #menu nav ul li a {
   display: block;
   color: inherit;
+  border: 1px solid transparent;
+  border-radius: 5px;
   text-decoration: none;
   padding: 0 0.5em 0 0.5em;
   outline: 0;
 }
 
-#menu nav ul li a:hover {
-  display: block;
-  color: inherit;
-  text-decoration: none;
-  padding: 0 0.5em 0 0.5em;
-  outline: 0;
+#menu nav ul li a:hover{
+  color: #F8B001;
+}
+
+#menu nav ul li a:active{
+  background-color: #F8B001;
+  color: #fff;
 }
 
 #toggle {
