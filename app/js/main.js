@@ -1,5 +1,19 @@
 "use strict";
 
+var main = $('body');
+var currentCls = 'home';
+var sections = {
+  home: $('#home'),
+  about_us: $('#about-us'),
+  processes: $('#processes'),
+  projects: $('#projects'),
+  services: $('#services'),
+  mentors: $('#mentors'),
+  benefits: $('#benefits'),
+  faq: $('#faq'),
+  contact: $('#contact'),
+};
+
 $( window ).scroll(function() {
   if($(this).scrollTop()>=$('#home-content').position().top){
     $('#menu').css(
