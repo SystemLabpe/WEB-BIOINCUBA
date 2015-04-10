@@ -100,7 +100,8 @@ a, a:hover{
 }
 
 .home-content{
-  margin-top: 200px
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .home-content h1 {
@@ -130,11 +131,21 @@ a, a:hover{
 }
 
 .buttons button{
-  background: #fff;
-  color: #1a1a1a;
-  padding: 15px 23px;
-  border: 2px solid #ffffff;
+  color: #fff;
+  background-color: #F8B001;
+  min-width: 120px;
+  padding: 5px 15px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
   margin: 10px;
+}
+
+button.button-about-us {
+
+}
+
+button.button-contact {
+
 }
 
 /* ==================================================
