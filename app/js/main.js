@@ -26,6 +26,7 @@ $( window ).scroll(function() {
       }
     );
     $('#logoMenu').css("background-image","url('../img/logo-color250x60.png')");
+
   }else{
     $('#menu').removeAttr('style');
     if (!($('#logoMenu').css("background-image")==="url('../img/logo-250x60.png')")) {
