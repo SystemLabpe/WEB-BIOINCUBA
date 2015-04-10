@@ -186,10 +186,12 @@ body.faq #sections {
 }
 
 .buttons a{
+  display: inline-block;
+  text-align: center;
   color: #fff;
   background-color: transparent;
   min-width: 120px;
-  padding: 5px 15px;
+  padding: 8px 15px;
   border: 1px solid #ffffff;
   border-radius: 5px;
   margin: 10px;
@@ -204,7 +206,6 @@ body.faq #sections {
    About-us
 ================================================== */
 #about-us {
-  height: 700px;
   text-align: center;
   padding-top: 70px;
 }
@@ -215,10 +216,44 @@ body.faq #sections {
   border-bottom: 1px solid #646464;
 }
 
-#about-us p{
+#about-us p {
   font-size: 18px;
-  line-height: 30px;
+  line-height: 1.8;
 }
+
+#about-us .directory {
+  margin-top: 70px;
+}
+
+#about-us .dir-member {
+  display: inline-block;
+  float: none !important;
+  vertical-align: top;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#about-us .dir-member img{
+  max-width: 150px;
+  padding: 10px;
+  margin: 0 auto;
+  border: 2px solid #42705B;
+  border-radius: 50%;
+}
+
+#about-us .dir-member h3{
+  vertical-align: middle;
+  font-size: 18px;
+  line-height: 0.9;
+  height: 38px;
+  border-bottom: 2px solid #42705B;
+}
+
+#about-us .dir-member h4{
+  margin-top: 5px;
+  font-size: 14px;
+}
+
 
 /* Curve border
 #about-us .border-top {
