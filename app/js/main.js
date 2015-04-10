@@ -106,9 +106,9 @@ function display_header() {
   }else{
     is_not_home_section = false;
     $('#menu').removeAttr('style');
-    if (!($('#logoMenu').css("background-image")==="url('../img/logo-250x60.png')")) {
+    if ($('#logoMenu').css("background-image")!=="url('../img/logo-250x60.png')") {
       $('#logoMenu').css("background-image","url('../img/logo-250x60.png')");
-    };
+    }
   }
 }
 
