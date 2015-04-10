@@ -14,6 +14,16 @@ var sections = {
   contact: $('#contact'),
 };
 
+var mentors_slider = $('.mentors-slider').bxSlider({
+  slideWidth: 220,
+  minSlides: 1,
+  maxSlides: 5,
+  moveSlides: 1,
+  slideMargin: 10
+});
+
+var is_not_home_section = false;
+
 function isScrolledIntoView(c) {
   var e = $(window).scrollTop();
   var d = e + $(window).height();
@@ -23,8 +33,8 @@ function isScrolledIntoView(c) {
 
 function checkActive(a) {
   var c = a.data('class');
-  console.log('C -> ',c);
-  console.log('CURRENT CLASS -> ',currentCls);
+  //console.log('C -> ',c);
+  //console.log('CURRENT CLASS -> ',currentCls);
   if (c !== currentCls && isScrolledIntoView(a)) {
     //main.toggleClass(currentCls + " " + a.data("class"));
     main.removeClass();
@@ -41,16 +51,6 @@ function changeBackground(){
     }
   }
 }
-
-var mentors_slider = $('.mentors-slider').bxSlider({
-  slideWidth: 220,
-  minSlides: 1,
-  maxSlides: 5,
-  moveSlides: 1,
-  slideMargin: 10
-});
-
-var is_not_home_section = false;
 
 function mentors_resize() {
   var window_width = $(window).width();
@@ -104,8 +104,9 @@ function display_header() {
     );
     $('#logoMenu').css("background-image","url('../img/logo-color250x60.png')");
   }else{
-    is_not_home_section = false;
     $('#menu').removeAttr('style');
+    $('#menu nav ul li a').removeAttr('style');
+    is_not_home_section = false;
     if ($('#logoMenu').css("background-image")!=="url('../img/logo-250x60.png')") {
       $('#logoMenu').css("background-image","url('../img/logo-250x60.png')");
     }
