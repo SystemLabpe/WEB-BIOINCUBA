@@ -10,7 +10,8 @@ body {
 
 h2 {
   margin: 0px auto;
-  padding: 20px 0px;
+  padding: 10px 0px;
+  margin-bottom: 20px;
 }
 
 a, a:hover{
@@ -36,6 +37,45 @@ a, a:hover{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+/* ==================================================
+   Backgrounds Sections
+================================================== */
+#sections {
+  background:#d2edf5;
+  -webkit-transition:all 0.5s linear;
+  -moz-transition:all 0.5s linear;
+  -o-transition:all 0.5s linear;
+  transition:all 0.5s linear;
+}
+
+body.about-us #sections {
+  background: #CEEFE0;
+}
+
+body.processes #sections {
+  background: #D1E7F2;
+}
+
+body.projects #sections {
+  background: #F2F1DA;
+}
+
+body.services #sections {
+  background: #D6D8E8;
+}
+
+body.mentors #sections {
+  background: #D6D8E8;
+}
+
+body.benefits #sections {
+  background: #D6D8E8;
+}
+
+body.faq #sections {
+  background: #fff;
 }
 
 /* ==================================================
@@ -143,7 +183,7 @@ a, a:hover{
 
 .buttons button{
   color: #fff;
-  background-color: #F8B001;
+  background-color: transparent;
   min-width: 120px;
   padding: 5px 15px;
   border: 1px solid #ffffff;
@@ -151,22 +191,24 @@ a, a:hover{
   margin: 10px;
 }
 
-button.button-about-us {
-
+.buttons button:hover {
+  background-color: #F8B001;
 }
 
-button.button-contact {
-
-}
 
 /* ==================================================
    About-us
 ================================================== */
 #about-us {
   height: 700px;
-  background-color: #fff;
   text-align: center;
   padding-top: 20px;
+}
+
+#about-us h2 {
+  display: inline-block;
+  color: #42705B;
+  border-bottom: 1px solid #646464;
 }
 
 #about-us .border-top {
@@ -184,41 +226,59 @@ button.button-contact {
 ================================================== */
 #processes {
   height: 700px;
-  background-color: black;
   color: #fff;
   text-align: center;
   padding-top: 20px;
+}
+
+#processes h2 {
+  display: inline-block;
+  color: #2F7DA3;
+  border-bottom: 1px solid #646464;
 }
 
 /* ==================================================
    Projects
 ================================================== */
 #projects {
-  background-color: #fff;
   text-align: center;
   padding-top: 20px;
 }
 
-
+#projects h2 {
+  display: inline-block;
+  color: #B2AF3B;
+  border-bottom: 1px solid #646464;
+}
 
 /* ==================================================
    Services
 ================================================== */
 #services {
   height: 700px;
-  background-color: black;
   color: #fff;
   text-align: center;
   padding-top: 20px;
+}
+
+#services h2 {
+  display: inline-block;
+  color: #6B7ACE;
+  border-bottom: 1px solid #646464;
 }
 
 /* ==================================================
    Mentors
 ================================================== */
 #mentors {
-  background-color: #fff;
   text-align: center;
   padding-top: 20px;
+}
+
+#mentors h2 {
+  display: inline-block;
+  color: #6B7ACE;
+  border-bottom: 1px solid #646464;
 }
 
 .mentor {
@@ -239,10 +299,15 @@ button.button-contact {
 ================================================== */
 #benefits {
   height: 700px;
-  background-color: black;
   color: #fff;
   text-align: center;
   padding-top: 20px;
+}
+
+#benefits h2 {
+  display: inline-block;
+  color: #6B7ACE;
+  border-bottom: 1px solid #646464;
 }
 
 /* ==================================================
@@ -250,9 +315,14 @@ button.button-contact {
 ================================================== */
 #faq {
   height: 700px;
-  background-color: #f9f9f9;
   text-align: center;
   padding-top: 20px;
+}
+
+#faq h2 {
+  display: inline-block;
+  color: #6B7ACE;
+  border-bottom: 1px solid #646464;
 }
 
 /* ==================================================

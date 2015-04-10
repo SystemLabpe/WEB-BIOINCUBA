@@ -14,6 +14,34 @@ var sections = {
   contact: $('#contact'),
 };
 
+function isScrolledIntoView(c) {
+  var e = $(window).scrollTop();
+  var d = e + $(window).height();
+  var a = $(c).offset().top;
+  return ((a <= d) && (a >= e));
+}
+
+function checkActive(a) {
+  var c = a.data('class');
+  console.log('C -> ',c);
+  console.log('CURRENT CLASS -> ',currentCls);
+  if (c !== currentCls && isScrolledIntoView(a)) {
+    //main.toggleClass(currentCls + " " + a.data("class"));
+    main.removeClass();
+    main.attr('class',c);
+    currentCls = a.data("class");
+  }
+}
+
+function _onScroll(){
+  for (var section in sections) {
+    var a = sections[section];
+    if (sections.hasOwnProperty(section)) {
+      checkActive(a);
+    }
+  }
+}
+
 $( window ).scroll(function() {
   if($(this).scrollTop()>=$('#home-content').position().top){
     $('#menu').css(
@@ -25,13 +53,14 @@ $( window ).scroll(function() {
         "box-shadow": "0 0 0.15em 0 rgba(0,0,0,0.1)",
       }
     );
-    $('#logoMenu').css("background-image","url('../img/logo-color250x60.png')");
+    $('#logoMenu').css("background-image","url('../img/logo-color200x48.png')");
   }else{
     $('#menu').removeAttr('style');
-    if (!($('#logoMenu').css("background-image")==="url('../img/logo-250x60.png')")) {
+    if ($('#logoMenu').css("background-image")!=="url('../img/logo-250x60.png')") {
       $('#logoMenu').css("background-image","url('../img/logo-250x60.png')");
-    };
+    }
   }
+  _onScroll();
 });
 
 var mentors_slider = $('.mentors-slider').bxSlider({
@@ -333,8 +362,7 @@ $(window).on('load',function(){
             ]
         });
 
-  mentors_resize();
-
-
+mentors_resize();
+_onScroll();
 
 });
