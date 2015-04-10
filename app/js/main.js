@@ -2,9 +2,22 @@
 
 $( window ).scroll(function() {
   if($(this).scrollTop()>=$('#home-content').position().top){
-      //alert($(this).scrollTop()+" "+$('#home-content').position().top);
-
-    }
+    $('#menu').css(
+      { "left": "0",
+        "top": "0",
+        "width": "100%",
+        "background": "#ECECEC",
+        "color":  "#F8B102",
+        "box-shadow": "0 0 0.15em 0 rgba(0,0,0,0.1)",
+      }
+    );
+    $('#logoMenu').css("background-image","url('../img/logo-color250x60.png')");
+  }else{
+    $('#menu').removeAttr('style');
+    if (!($('#logoMenu').css("background-image")==="url('../img/logo-250x60.png')")) {
+      $('#logoMenu').css("background-image","url('../img/logo-250x60.png')");
+    };
+  }
 });
 
 var mentors_slider = $('.mentors-slider').bxSlider({

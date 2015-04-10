@@ -3,46 +3,38 @@
 /* ==================================================
    Header
 ================================================== */
-  #menu {
-    position: fixed;
-    z-index: 10000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    background: #ECECEC;
-    color:  #F8B102;
-    height: 3em;
-    line-height: 3em;
-    box-shadow: 0 0 0.15em 0 rgba(0,0,0,0.1);
-    font-size: 18px;
-    font-weight: 600;
+  #menu nav {
+    display: none;
+    position: static;
+    background:#ECECEC;
   }
-    #menu nav {
-      display: none;
-      position: static;
-      background:#fff;
-    }
-      #menu nav ul {
-        margin: 0;
-        padding: 0;
-        text-align: center;
-      }
 
-        #menu nav ul li {
-          display: block;
-          width: 100%;
-          height: 40px;
-          line-height: 40px;
-          margin: 0;
-        }
+  #menu nav ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
 
-          #menu nav ul li a {
-            display: block;
-            width: 100%;
-            height: auto;
-            border-top: 1px solid #2F3238;
-            border-spacing: inherit;
-          }
+  #menu nav ul li {
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+  }
+
+  #menu nav ul li a {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-top: 1px dashed #F8B001;
+    border-spacing: inherit;
+  }
+
+  #menu nav ul li a:hover {
+    background-color: #F8B001;
+    color: #ECECEC;
+  }
 
   #toggle {
     position: absolute;

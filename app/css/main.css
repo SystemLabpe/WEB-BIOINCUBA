@@ -48,9 +48,9 @@ a, a:hover{
   top: 3%;
   width: 90%;
   background: transparent;
-  color:  #F8B102;
-  height: 3em;
-  line-height: 3em;
+  color:  #fff;
+  height: 3.5em;
+  line-height: 3.5em;
   font-size: 18px;
   font-weight: 600;
 }
@@ -58,6 +58,9 @@ a, a:hover{
 #logoMenu {
   margin-top: 0;
   margin-left: 15px;
+  background-image: url('../img/logo-250x60.png');
+  width: 250px;
+  height: 60px;
   cursor: pointer;
 }
 
@@ -68,23 +71,31 @@ a, a:hover{
   top: 0;
 }
 
-  #menu nav ul {
-    margin: 0;
-  }
+#menu nav ul {
+  margin: 0;
+}
 
-    #menu nav ul li {
-      display: inline-block;
-      margin-left: 0.5em;
-      font-size: 0.8em;
-    }
+#menu nav ul li {
+  display: inline-block;
+  margin-left: 0.5em;
+  font-size: 0.8em;
+}
 
-      #menu nav ul li a {
-        display: block;
-        color: inherit;
-        text-decoration: none;
-        padding: 0 0.5em 0 0.5em;
-        outline: 0;
-      }
+#menu nav ul li a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  padding: 0 0.5em 0 0.5em;
+  outline: 0;
+}
+
+#menu nav ul li a:hover {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  padding: 0 0.5em 0 0.5em;
+  outline: 0;
+}
 
 #toggle {
   display: none;
