@@ -96,6 +96,11 @@ a, a:hover{
   color: #F8B001;
 }
 
+#menu nav ul li a:active{
+  background-color: #F8B001;
+  color: #fff;
+}
+
 #toggle {
   display: none;
 }
