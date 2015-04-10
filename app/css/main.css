@@ -185,7 +185,7 @@ body.faq #sections {
   margin-top: 20px;
 }
 
-.buttons button{
+.buttons a{
   color: #fff;
   background-color: transparent;
   min-width: 120px;
@@ -195,7 +195,7 @@ body.faq #sections {
   margin: 10px;
 }
 
-.buttons button:hover {
+.buttons a:hover {
   background-color: #F8B001;
 }
 
@@ -215,6 +215,12 @@ body.faq #sections {
   border-bottom: 1px solid #646464;
 }
 
+#about-us p{
+  font-size: 18px;
+  line-height: 30px;
+}
+
+/* Curve border
 #about-us .border-top {
   background: url('../img/benefits/border-top-2.png') center top no-repeat transparent;
   width: 100%;
@@ -224,6 +230,7 @@ body.faq #sections {
   left: 0;
   z-index: 1;
 }
+*/
 
 /* ==================================================
    Processes
