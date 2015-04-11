@@ -334,7 +334,7 @@ body.faq #sections {
   border-bottom: 1px solid #646464;
 }
 
-.services img {
+#services .services img {
   position: relative;
   top: 25px;
 }
@@ -384,6 +384,15 @@ body.faq #sections {
   margin: auto;
   overflow: hidden;
   margin-bottom: 25px;
+}
+
+#mentors .bx-wrapper .bx-viewport {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  left: -5px;
+  background: transparent;
 }
 
 /* ==================================================
