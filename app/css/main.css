@@ -293,7 +293,6 @@ body.faq #sections {
    Processes
 ================================================== */
 #processes {
-  height: 700px;
   color: #fff;
   text-align: center;
   padding-top: 70px;
@@ -303,6 +302,23 @@ body.faq #sections {
   display: inline-block;
   color: #2F7DA3;
   border-bottom: 1px solid #646464;
+}
+
+#processes h3 {
+  color: #2F7DA3;
+  margin-top: 100px
+}
+
+#processes p {
+  color: #646464;
+  font-size: 16px;
+  font-style: italic;
+  text-align: justify;
+}
+
+#processes .pro-divider {
+  position: relative;
+  top: 280px;
 }
 
 /* ==================================================
