@@ -16,19 +16,20 @@
 </head>
 <body>
    <!-- Header -->
-  <header id="menu">
+  <header id="menu" class="menu">
 
     <!-- Logo -->
-    <a  href="#home" id="logoMenu">BioIncuba</a>
+    <a href="#home" id="logoMenu" class="logoMenu">
+    </a>
 
     <!-- Nav -->
     <nav>
       <ul>
-        <li><a href="#processes">Procesos</a></li>
-        <li><a href="#projects">Proyectos</a></li>
-        <li><a href="#services">Beneficios</a></li>
-        <li><a href="#faq">Blog</a></li>
-        <li><a href="#contact">Contáctanos</a></li>
+        <li><a href="#processes">PROCESOS</a></li>
+        <li><a href="#projects">PROYECTOS</a></li>
+        <li><a href="#services">VENTAJAS</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">CONTACTANOS</a></li>
       </ul>
     </nav>
 
@@ -39,109 +40,284 @@
   <!--  Background IMG -->
   <div id="background"></div>
   <!-- Sections -->
-  <section id="home" class="container home-wrap" data-class="home">
-    <div class="row">
-      <div class="col-md-8 col-xs-10 col-md-offset-2 col-xs-offset-1 home-content">
-        <h2>BioIncuba</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac</p>
-        <div class="buttons">
-          <button>Conócenos</button>
-          <button>Contáctanos</button>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="about-us" data-class="about-us">
-    <div class="border-top"></div>
-    <h2>Conócenos</h2>
-  </section>
-  <section id="processes" data-class="processes">
-    <h2>Procesos</h2>
-  </section>
-
-  <section id="projects" data-class="projects">
-    <h2>Proyectos</h2>
-    <div id="project-list"></div>
-  </section>
-
-  <section id="services" data-class="services">
-    <h2>Servicios</h2>
-  </section>
-  <section id="mentors" data-class="mentors">
+  <section id="home" data-class="home">
     <div class="container">
-      <div class="row">
-        <h2>Mentores</h2>
-      </div>
-      <div class="mentors-slider">
-        <div class="slide mentor">
-           <img class="img-responsive mentor-pic" src="img/mentors/1.jpg"></img>
-            <h4>John Doe</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
-               quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.adipiscing vitae vel quam proin eget mauris eget.</p>
-        </div>
-        <div class="slide mentor">
-           <img class="img-responsive mentor-pic" src="img/mentors/2.jpg"></img>
-            <h4>Diana Perterse</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
-               quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.adipiscing vitae vel quam proin eget mauris eget.</p>
-        </div>
-        <div class="slide mentor">
-           <img class="img-responsive mentor-pic" src="img/mentors/3.jpg"></img>
-            <h4>Larry Parker</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
-               quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.adipiscing vitae vel quam proin eget mauris eget.</p>
-        </div>
-        <div class="slide mentor">
-           <img class="img-responsive mentor-pic" src="img/mentors/4.jpg"></img>
-            <h4>Ashley Simmons</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
-               quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.adipiscing vitae vel quam proin eget mauris eget.</p>
-        </div>
-        <div class="slide mentor">
-           <img class="img-responsive mentor-pic" src="img/mentors/1.jpg"></img>
-            <h4>John Doe 2</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
-               quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.adipiscing vitae vel quam proin eget mauris eget.</p>
-        </div>
-        <div class="slide mentor">
-           <img class="img-responsive mentor-pic" src="img/mentors/2.jpg"></img>
-            <h4>Diana Perterse 2</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
-               quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.adipiscing vitae vel quam proin eget mauris eget.</p>
-        </div>
-        <div class="slide mentor">
-           <img class="img-responsive mentor-pic" src="img/mentors/3.jpg"></img>
-            <h4>Larry Parker 2</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
-               quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.adipiscing vitae vel quam proin eget mauris eget.</p>
-        </div>
-        <div class="slide mentor">
-           <img class="img-responsive mentor-pic" src="img/mentors/4.jpg"></img>
-            <h4>Ashley Simmons 2</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
-               quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.adipiscing vitae vel quam proin eget mauris eget.</p>
-        </div>
-        <div class="slide mentor">
-           <img class="img-responsive mentor-pic" src="img/mentors/1.jpg"></img>
-            <h4>John Doe 3</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
-               quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.adipiscing vitae vel quam proin eget mauris eget.</p>
-        </div>
-        <div class="slide mentor">
-           <img class="img-responsive mentor-pic" src="img/mentors/2.jpg"></img>
-            <h4>Diana Perterse 3</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
-               quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.adipiscing vitae vel quam proin eget mauris eget.</p>
+      <div class="row home-content">
+        <div id="home-content" class="col-lg-6 col-sm-8">
+          <h1>
+            ESTAMOS ACA PARA
+            <br>
+            <span class="title-middle"><strong>POTENCIAR</strong> TUS PROYECTOS</span> <br>
+            Y <strong>MAXIMIZAR</strong> TUS GANANCIAS
+          </h1>
+          <small class="slogan">"conocimiento que crea valor"</small><br>
+          <div class="row buttons">
+            <div class="col-md-12">
+              <a href="#about-us" class="button-about-us">Conócenos</a>
+            </div>
+            <div class="col-md-12">
+              <a href="#contact" class="button-contact">Contáctanos</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
-  <section id="benefits" data-class="benefits">
-    <h2>Beneficios</h2>
-  </section>
-  <section id="faq" data-class="faq">
-    <h2>Como te ayudamos</h2>
-  </section>
+  <div id="sections">
+    <section id="about-us" data-class="about-us">
+      <!-- <div class="border-top"></div> -->
+      <div class="container">
+        <div class="row">
+          <h2>Conócenos</h2>
+        </div>
+        <div class="row">
+          <p class="col-md-10 col-md-offset-1">BIOINCUBA es una Sociedad Anónima Cerrada, queda inscrita en los Registros Públicos a fines de febrero 2010 y luego del proceso de implementación empieza sus operaciones en mayo del mismo año, su principal accionista es la
+          Universidad Peruana Cayetano Heredia (UPCH). <br>
+          Empresa dedicada a la difusión, comercialización y al desarrollo de proyectos en todas las áreas de investigación, principalmente aquellas desarrolladas por la  Universidad Peruana Cayetano Heredia.</p>
+        </div>
+        <div class="row directory">
+          <article class="col-md-2 col-sm-3 dir-member">
+            <img class="img-responsive" src="img/mentors/1.jpg">
+            <h3>Raymundo Morales</h3>
+            <h4>Presidente</h4>
+          </article>
+          <article class="col-md-2 col-sm-3 dir-member">
+            <img class="img-responsive" src="img/mentors/2.jpg">
+            <h3>Manuel Carrillo</h3>
+            <h4>Director</h4>
+          </article>
+          <article class="col-md-2 col-sm-3 dir-member">
+            <img class="img-responsive" src="img/mentors/3.jpg">
+            <h3>Ana Gabriela Sobarzo</h3>
+            <h4>Gerente General</h4>
+          </article>
+          <article class="col-md-2 col-sm-3 dir-member">
+            <img class="img-responsive" src="img/mentors/4.jpg">
+            <h3>Manuel Carrilo</h3>
+            <h4>Director</h4>
+          </article>
+          <article class="col-md-2 col-sm-3 dir-member">
+            <img class="img-responsive" src="img/mentors/1.jpg">
+            <h3>Ana Gabriela Sobarzo</h3>
+            <h4>Gerente General</h4>
+          </article>
+        </div>
+    </div>
+    </section>
+    <section id="processes" data-class="processes">
+      <div class="container">
+        <div class="row">
+          <h2>Procesos</h2>
+        </div>
+        <div class="row processes">
+          <img class="col-md-12 pro-divider" src="img/processes/bottom.png">
+          <div class="col-md-4 process">
+            <img src="img/processes/pro-1.png">
+            <h3>Pre Incubación</h3>
+            <p class="col-md-10 col-md-offset-1">Apoyo al equipo de emprendimiento a diseñar o mejorar su modelo de negocios. Capacitaciones, cohesión, y su adecuación a las necesidades del proyecto.
+            Presentación de su proyecto ante el Comité de Selección de Emprendimientos de BIOINCUBA.
+            </p>
+          </div>
+          <div class="col-md-4 process">
+            <img src="img/processes/pro-2.png">
+            <h3>Incubación</h3>
+            <p class="col-md-10 col-md-offset-1">
+              Etapa donde se apoyará ofreciendo asesoría y capacitación, generación de entorno, acceso a redes, networking, generar inversión y financiamiento, apoyo para el inicio de ventas, gestión y comercialización.
+            </p>
+          </div>
+          <div class="col-md-4 process">
+            <img src="img/processes/pro-3.png">
+            <h3>Aceleración</h3>
+            <p class="col-md-10 col-md-offset-1">
+              Incremento en la velocidad  de ejecución de las funciones directivas, comerciales, administrativas, financieras, tecnológicas y de recursos humanos de una empresa alineados a una serie de objetivos y estrategias de negocio en un espacio de tiempo determinado.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <img src="">
+        </div>
+      </div>
+
+    </section>
+
+    <section id="projects" data-class="projects">
+      <div class="container">
+        <div class="row">
+          <h2>Proyectos</h2>
+        </div>
+        <div class="row">
+          <div id="project-list"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" data-class="services">
+      <div class="container">
+        <div class="row">
+          <h2>Servicios</h2>
+        </div>
+        <div class="row services">
+          <article class="col-md-3 col-sm-6 service">
+            <img src="img/services/serv-1.png">
+            <div class="service-content">
+              <h3>
+                REDACCION DE PROYECTO PARA FONDOS NACIONALES E INTERNACIONALES
+              </h3
+            </div>
+          </article>
+          <article class="col-md-3 col-sm-6 service">
+            <img src="img/services/serv-2.png">
+            <div class="service-content">
+              <h3>
+              USO DE SISTEMAS EN LÍNEA PARA FONDOS NACIONALES
+              </h3>
+            </div>
+          </article>
+          <article class="col-md-3 col-sm-6 service">
+            <img src="img/services/serv-3.png">
+            <div class="service-content">
+              <h3>
+              MODELADO DE NEGOCIOS Y ELEVATOR PITCH
+              </h3>
+            </div>
+          </article>
+          <article class="col-md-3 col-sm-6 service">
+            <img src="img/services/serv-4.png">
+            <div class="service-content">
+              <h3>
+              VALORACIÓN TECNOLÓGICA DESARROLLADA
+              </h3>
+            </div>
+          </article>
+          <article class="col-md-3 col-sm-6 service">
+            <img src="img/services/serv-5.png">
+            <div class="service-content">
+              <h3>
+              NEGOCIACIÓN ESTRATÉGICA
+              </h3>
+            </div>
+          </article>
+          <article class="col-md-3 col-sm-6 service">
+            <img src="img/services/serv-6.png">
+            <div class="service-content">
+              <h3>
+              REGISTRO DE MARCA
+              </h3>
+            </div>
+          </article>
+          <article class="col-md-3 col-sm-6 service">
+            <img src="img/services/serv-7.png">
+            <div class="service-content">
+              <h3>
+              PROPIEDAD INTELECTUAL
+              </h3>
+            </div>
+          </article>
+          <article class="col-md-3 col-sm-6 service">
+            <img src="img/services/serv-8.png">
+            <div class="service-content">
+              <h3>
+              NETWORKING
+              </h3>
+            </div>
+          </article>
+          <article class="col-md-3 col-sm-6 service">
+            <img src="img/services/serv-9.png">
+            <div class="service-content">
+              <h3>
+              IDENTIFICACIÓN DE CAPITAL DE RIESGO ESPECIALIZADO
+              </h3>
+            </div>
+          </article>
+          <article class="col-md-3 col-sm-6 service">
+            <img src="img/services/serv-10.png">
+            <div class="service-content">
+              <h3>
+              CONSULTORÍAS ESPECIALIZADAS
+              </h3>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="mentors" data-class="mentors">
+      <div class="container">
+        <div class="row">
+          <h2>Mentores</h2>
+        </div>
+        <div class="row">
+          <div class="mentors-slider">
+            <div class="slide mentor">
+               <img class="img-responsive mentor-pic" src="img/mentors/1.jpg"></img>
+                <h4>John Doe</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                   quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.adipiscing vitae vel quam proin eget mauris eget.</p>
+            </div>
+            <div class="slide mentor">
+               <img class="img-responsive mentor-pic" src="img/mentors/2.jpg"></img>
+                <h4>Diana Perterse</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                   quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.adipiscing vitae vel quam proin eget mauris eget.</p>
+            </div>
+            <div class="slide mentor">
+               <img class="img-responsive mentor-pic" src="img/mentors/3.jpg"></img>
+                <h4>Larry Parker</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                   quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.adipiscing vitae vel quam proin eget mauris eget.</p>
+            </div>
+            <div class="slide mentor">
+               <img class="img-responsive mentor-pic" src="img/mentors/4.jpg"></img>
+                <h4>Ashley Simmons</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                   quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.adipiscing vitae vel quam proin eget mauris eget.</p>
+            </div>
+            <div class="slide mentor">
+               <img class="img-responsive mentor-pic" src="img/mentors/1.jpg"></img>
+                <h4>John Doe 2</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                   quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.adipiscing vitae vel quam proin eget mauris eget.</p>
+            </div>
+            <div class="slide mentor">
+               <img class="img-responsive mentor-pic" src="img/mentors/2.jpg"></img>
+                <h4>Diana Perterse 2</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                   quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.adipiscing vitae vel quam proin eget mauris eget.</p>
+            </div>
+            <div class="slide mentor">
+               <img class="img-responsive mentor-pic" src="img/mentors/3.jpg"></img>
+                <h4>Larry Parker 2</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                   quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.adipiscing vitae vel quam proin eget mauris eget.</p>
+            </div>
+            <div class="slide mentor">
+               <img class="img-responsive mentor-pic" src="img/mentors/4.jpg"></img>
+                <h4>Ashley Simmons 2</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                   quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.adipiscing vitae vel quam proin eget mauris eget.</p>
+            </div>
+            <div class="slide mentor">
+               <img class="img-responsive mentor-pic" src="img/mentors/1.jpg"></img>
+                <h4>John Doe 3</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                   quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.adipiscing vitae vel quam proin eget mauris eget.</p>
+            </div>
+            <div class="slide mentor">
+               <img class="img-responsive mentor-pic" src="img/mentors/2.jpg"></img>
+                <h4>Diana Perterse 3</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                   quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.adipiscing vitae vel quam proin eget mauris eget.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="benefits" data-class="benefits">
+      <h2>Beneficios</h2>
+    </section>
+    <section id="faq" data-class="faq">
+      <h2>Como te ayudamos</h2>
+    </section>
+  </div>
   <section id="contact" data-class="contact">
     <div class="container">
       <h2>Contáctanos</h2>
