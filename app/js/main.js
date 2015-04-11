@@ -41,26 +41,29 @@ function isScrolledIntoView(c) {
   return ((a <= d) && (a >= e));
 }
 
-function isScrolledOnView(c) {
-  var e = $(window).scrollTop();
-  var d = e + $(window).height();
-  var a = $(c).offset().top;
-  return ((a >= d) && (a <= e));
+function isScrolledIntoTopView(c) {
+  var w_scrl_top = $(window).scrollTop();
+  var e_offset   = $(c).offset().top;
+  var e_height   = $(c).height();
+  /*console.log(e_offset);
+  console.log(e_height);
+  console.log(w_scrl_top);
+  console.log("");*/
+  return (e_offset + e_height >= w_scrl_top);
 }
 
 function checkActive(a) {
+  /*console.log("");
+  console.log(a);
+  console.log(currentCls);
+  console.log(previousCls);*/
   var c = a.data('class');
-  console.log('C -> ',c);
-  console.log('CURRENT CLASS -> ',currentCls);
-  if (c !== currentCls) {
-    if(isScrolledIntoView(a)){
-      changeBackground(c);
-      currentCls = a.data("class");
-    }
-    if(isScrolledOnView(a)){
-      changeBackground(c);
-    }
-
+  if (c !== currentCls && isScrolledIntoView(a)) {
+    changeBackground(c);
+    currentCls = c;
+  }
+  //console.log($(a).height());
+  if(isScrolledIntoTopView(a)){
     changeOptionSelected();
   }
 }
