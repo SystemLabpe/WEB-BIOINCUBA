@@ -459,7 +459,7 @@ body.faq #sections {
 ================================================== */
 #benefits {
   height: 700px;
-  color: #fff;
+  color: #646464;
   text-align: center;
   padding-top: 70px;
 }
@@ -468,6 +468,20 @@ body.faq #sections {
   display: inline-block;
   color: #6B7ACE;
   border-bottom: 1px solid #646464;
+}
+
+#benefits .benefits-content {
+  display: table;
+}
+
+#benefits .benefits-content div {
+  display: table-cell;
+  vertical-align: middle;
+  float: none !important;
+}
+
+#benefits h3,p {
+  text-align: left;
 }
 
 /* ==================================================
