@@ -203,202 +203,42 @@ $(window).on('load',function(){
     return false;
   });
 
-   $("#project-list").elastic_grid({
-            'showAllText' : 'Todos',
-            'filterEffect': 'scaleup', // moveup, scaleup, fallperspective, fly, flip, helix , popup
-            'hoverDirection': true,
-            'hoverDelay': 0,
-            'hoverInverse': false,
-            'expandingSpeed': 500,
-            'expandingHeight': 500,
-            'items' :
-            [
-                {
-                    'title'         : 'josue bean',
-                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
-                    'thumbnail'     : ['img/projects/small/1.jpg', 'img/projects/small/2.jpg', 'img/projects/small/3.jpg', 'img/projects/small/10.jpg', 'img/projects/small/11.jpg'],
-                    'large'         : ['img/projects/large/1.jpg', 'img/projects/large/2.jpg', 'img/projects/large/3.jpg', 'img/projects/large/10.jpg', 'img/projects/large/11.jpg'],
-                    'button_list'   :
-                    [
-                        { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
-                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : false}
-                    ],
-                    'tags'          : ['Pre-Incubacion']
-                },
-                {
-                    'title'         : 'Swiss chard pumpkin',
-                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
-                    'thumbnail'     : ['img/projects/small/4.jpg', 'img/projects/small/5.jpg', 'img/projects/small/6.jpg', 'img/projects/small/7.jpg'],
-                    'large'         : ['img/projects/large/4.jpg', 'img/projects/large/5.jpg', 'img/projects/large/6.jpg', 'img/projects/large/7.jpg'],
-                    'button_list'   :
-                    [
-                        { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
-                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
-                    ],
-                    'tags'          : ['Incubacion']
-                },
-                {
-                    'title'         : 'Spinach winter purslane',
-                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
-                    'thumbnail'     : ['img/projects/small/15.jpg','img/projects/small/8.jpg', 'img/projects/small/9.jpg', 'img/projects/small/10.jpg'],
-                    'large'         : ['img/projects/large/15.jpg','img/projects/large/8.jpg', 'img/projects/large/9.jpg', 'img/projects/large/10.jpg'],
-                    'button_list'   :
-                    [
-                        { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
-                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
-                    ],
-                    'tags'          : ['Aceleracion']
-                },
-                {
-                    'title'         : 'Aubergine napa cabbage',
-                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
-                    'thumbnail'     : ['img/projects/small/12.jpg', 'img/projects/small/13.jpg', 'img/projects/small/14.jpg', 'img/projects/small/15.jpg', 'img/projects/small/16.jpg'],
-                    'large'         : ['img/projects/large/12.jpg', 'img/projects/large/13.jpg', 'img/projects/large/14.jpg', 'img/projects/large/15.jpg', 'img/projects/large/16.jpg'],
-                    'button_list'   :
-                    [
-                        { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
-                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
-                    ],
-                    'tags'          : ['Pre-Incubacion']
-                },
-                {
-                    'title'         : 'Swiss chard pumpkin',
-                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
-                    'thumbnail'     : ['img/projects/small/17.jpg', 'img/projects/small/18.jpg', 'img/projects/small/19.jpg', 'img/projects/small/20.jpg'],
-                    'large'         : ['img/projects/large/17.jpg', 'img/projects/large/18.jpg', 'img/projects/large/19.jpg', 'img/projects/large/20.jpg'],
-                    'button_list'   :
-                    [
-                        { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
-                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
-                    ],
-                    'tags'          : ['Incubacion']
-                },
-                {
-                    'title'         : 'Spinach winter purslane',
-                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
-                    'thumbnail'     : ['img/projects/small/13.jpg','img/projects/small/15.jpg', 'img/projects/small/11.jpg', 'img/projects/small/10.jpg'],
-                    'large'         : ['img/projects/large/13.jpg','img/projects/large/15.jpg', 'img/projects/large/11.jpg', 'img/projects/large/10.jpg'],
-                    'button_list'   :
-                    [
-                        { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
-                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
-                    ],
-                    'tags'          : ['Aceleracion']
-                },
-                {
-                    'title'         : 'Spinach winter purslane',
-                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
-                    'thumbnail'     : ['img/projects/small/7.jpg','img/projects/small/8.jpg', 'img/projects/small/9.jpg', 'img/projects/small/10.jpg'],
-                    'large'         : ['img/projects/large/7.jpg','img/projects/large/8.jpg', 'img/projects/large/9.jpg', 'img/projects/large/10.jpg'],
-                    'button_list'   :
-                    [
-                        { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
-                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
-                    ],
-                    'tags'          : ['Pre-Incubacion']
-                },
-                {
-                    'title'         : 'Azuki bean',
-                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
-                    'thumbnail'     : ['img/projects/small/16.jpg', 'img/projects/small/13.jpg', 'img/projects/small/14.jpg', 'img/projects/small/15.jpg', 'img/projects/small/16.jpg'],
-                    'large'         : ['img/projects/large/16.jpg', 'img/projects/large/13.jpg', 'img/projects/large/14.jpg', 'img/projects/large/15.jpg', 'img/projects/large/16.jpg'],
-                    'button_list'   :
-                    [
-                        { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
-                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
-                    ],
-                    'tags'          : ['Incubacion']
-                },
-                {
-                    'title'         : 'Swiss chard pumpkin',
-                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
-                    'thumbnail'     : ['img/projects/small/18.jpg', 'img/projects/small/18.jpg', 'img/projects/small/19.jpg', 'img/projects/small/20.jpg'],
-                    'large'         : ['img/projects/large/18.jpg', 'img/projects/large/18.jpg', 'img/projects/large/19.jpg', 'img/projects/large/20.jpg'],
-                    'button_list'   :
-                    [
-                        { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
-                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
-                    ],
-                    'tags'          : ['Aceleracion']
-                },
-                {
-                    'title'         : 'Winter purslane',
-                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
-                    'thumbnail'     : ['img/projects/small/11.jpg','img/projects/small/15.jpg', 'img/projects/small/11.jpg', 'img/projects/small/10.jpg'],
-                    'large'         : ['img/projects/large/11.jpg','img/projects/large/15.jpg', 'img/projects/large/11.jpg', 'img/projects/large/10.jpg'],
-                    'button_list'   :
-                    [
-                        { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
-                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
-                    ],
-                    'tags'          : ['Pre-Incubacion']
-                },
-                {
-                    'title'         : 'Spinach winter purslane',
-                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
-                    'thumbnail'     : ['img/projects/small/3.jpg','img/projects/small/15.jpg', 'img/projects/small/11.jpg', 'img/projects/small/10.jpg'],
-                    'large'         : ['img/projects/large/3.jpg','img/projects/large/15.jpg', 'img/projects/large/11.jpg', 'img/projects/large/10.jpg'],
-                    'button_list'   :
-                    [
-                        { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
-                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
-                    ],
-                    'tags'          : ['Incubacion']
-                },
-                {
-                    'title'         : 'Spinach winter purslane',
-                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
-                    'thumbnail'     : ['img/projects/small/5.jpg','img/projects/small/8.jpg', 'img/projects/small/9.jpg', 'img/projects/small/10.jpg'],
-                    'large'         : ['img/projects/large/5.jpg','img/projects/large/8.jpg', 'img/projects/large/9.jpg', 'img/projects/large/10.jpg'],
-                    'button_list'   :
-                    [
-                        { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
-                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
-                    ],
-                    'tags'          : ['Aceleracion']
-                },
-                {
-                    'title'         : 'Azuki bean',
-                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
-                    'thumbnail'     : ['img/projects/small/6.jpg', 'img/projects/small/13.jpg', 'img/projects/small/14.jpg', 'img/projects/small/15.jpg', 'img/projects/small/16.jpg'],
-                    'large'         : ['img/projects/large/6.jpg', 'img/projects/large/13.jpg', 'img/projects/large/14.jpg', 'img/projects/large/15.jpg', 'img/projects/large/16.jpg'],
-                    'button_list'   :
-                    [
-                        { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
-                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
-                    ],
-                    'tags'          : ['Incubacion']
-                },
-                {
-                    'title'         : 'Swiss chard pumpkin',
-                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
-                    'thumbnail'     : ['img/projects/small/8.jpg', 'img/projects/small/18.jpg', 'img/projects/small/19.jpg', 'img/projects/small/20.jpg'],
-                    'large'         : ['img/projects/large/8.jpg', 'img/projects/large/18.jpg', 'img/projects/large/19.jpg', 'img/projects/large/20.jpg'],
-                    'button_list'   :
-                    [
-                        { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
-                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
-                    ],
-                    'tags'          : ['Incubacion']
-                },
-                {
-                    'title'         : 'Spinach winter purslane',
-                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
-                    'thumbnail'     : ['img/projects/small/9.jpg','img/projects/small/15.jpg', 'img/projects/small/11.jpg', 'img/projects/small/10.jpg'],
-                    'large'         : ['img/projects/large/9.jpg','img/projects/large/15.jpg', 'img/projects/large/11.jpg', 'img/projects/large/10.jpg'],
-                    'button_list'   :
-                    [
-                        { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
-                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
-                    ],
-                    'tags'          : ['Incubacion']
-                }
+  // quicksand
+  var $filterType = $('#filterOptions li.active a').attr('class');
 
-            ]
-        });
+  var $holder = $('#project-list');
 
-changeBackground();
-displayHeader();
-mentors_resize();
+  var $data = $holder.clone();
+
+  $('#filterOptions li a').click(function(e) {
+
+    $('#filterOptions li').removeClass('active');
+
+    var $filterType = $(this).attr('class');
+    $(this).parent().addClass('active');
+
+    if ($filterType == 'todos') {
+      var $filteredData = $data.find('article');
+    }
+    else {
+      var $filteredData = $data.find('article[data-type=' + $filterType + ']');
+    }
+
+    console.log($holder);
+    $holder.quicksand($filteredData, {
+      duration: 800,
+      easing: 'easeInCubic',
+      adjustHeight: false,
+      adjustWidth :false
+    });
+    console.log($filteredData);
+
+    return false;
+  });
+  //end quicksand
+
+  changeBackground();
+  displayHeader();
+  mentors_resize();
 
 });

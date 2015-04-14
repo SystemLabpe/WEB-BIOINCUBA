@@ -326,8 +326,194 @@ body.faq #sections {
 
 #projects h2 {
   display: inline-block;
-  color: #B2AF3B;
+  color: #0196AF;
   border-bottom: 1px solid #646464;
+}
+
+#projects ul.filterOptions {
+  text-align: left;
+}
+
+#projects ul.filterOptions li {
+  border: 1px solid transparent;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+#projects ul.filterOptions li a{
+  font-size: 18px;
+  text-decoration: none;
+}
+
+#projects ul.filterOptions li:hover {
+  border: 1px solid #0196AF;
+}
+
+#projects ul.filterOptions li.active {
+  border: 1px solid #0196AF;
+  background-color: #0196AF;
+}
+
+#projects ul.filterOptions li.active a{
+  color: #fff;
+}
+
+.project {
+  display: inline-block;
+  float: none !important;
+  padding: 0 3px 3px 0;
+  width: 230px
+}
+
+.project-content {
+  margin: 5px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  -webkit-box-shadow: 1px 1px 2px #e6e6e6;
+  -moz-box-shadow: 1px 1px 2px #e6e6e6;
+  box-shadow: 1px 1px 2px #e6e6e6;
+  cursor: default;
+}
+
+.project-content img {
+   display: block;
+   position: relative;
+}
+
+.project-content h3 {
+   text-transform: uppercase;
+   color: #fff;
+   text-align: center;
+   position: relative;
+   font-size: 17px;
+   padding: 10px;
+   background: rgba(0, 0, 0, 0.8);
+   margin: 20px 0 0 0;
+}
+
+.project-content .project-mask {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   overflow: hidden;
+   top: 0;
+   left: 0;
+}
+
+.project-content .project-mask ul {
+  padding-top: 20px;
+}
+
+.project-content .project-mask li {
+   font-family: Georgia, serif;
+   font-style: italic;
+   font-size: 11px;
+   position: relative;
+   color: #fff;
+   text-align: left;
+   padding-left: 10px;
+   padding-bottom: 8px;
+}
+
+.project-content .project-mask .projectS-mask-info{
+  padding-top: 55px;
+  padding-left: 90px;
+}
+
+.project-content a.project-mask-info {
+  margin-left: 10px;
+  font-size: 20px;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+}
+
+.project-content a.project-mask-info:hover {
+   color: #000;
+}
+
+/*------Transition-------*/
+
+.project-content .project-mask {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   background-color: rgba(1,150,175, 0.7);
+   -webkit-transition: all 0.4s ease-in-out;
+   -moz-transition: all 0.4s ease-in-out;
+   -o-transition: all 0.4s ease-in-out;
+   -ms-transition: all 0.4s ease-in-out;
+   transition: all 0.4s ease-in-out;
+}
+
+.project-content:hover .project-mask {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+}
+
+.project-content img {
+   -webkit-transition: all 0.2s linear;
+   -moz-transition: all 0.2s linear;
+   -o-transition: all 0.2s linear;
+   -ms-transition: all 0.2s linear;
+   transition: all 0.2s linear;
+}
+
+.project-content:hover img {
+   -webkit-transform: scale(1.1,1.1);
+   -moz-transform: scale(1.1,1.1);
+   -o-transform: scale(1.1,1.1);
+   -ms-transform: scale(1.1,1.1);
+   transform: scale(1.1,1.1);
+}
+
+.project-content h3 {
+   -webkit-transform: translateY(-100px);
+   -moz-transform: translateY(-100px);
+   -o-transform: translateY(-100px);
+   -ms-transform: translateY(-100px);
+   transform: translateY(-100px);
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   -webkit-transition: all 0.2s ease-in-out;
+   -moz-transition: all 0.2s ease-in-out;
+   -o-transition: all 0.2s ease-in-out;
+   -ms-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+}
+
+.project-content a.project-mask-info {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   -webkit-transition: all 0.2s ease-in-out;
+   -moz-transition: all 0.2s ease-in-out;
+   -o-transition: all 0.2s ease-in-out;
+   -ms-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+}
+
+.project-content:hover a.project-mask-info {
+   -webkit-transition-delay: 0.2s;
+   -moz-transition-delay: 0.2s;
+   -o-transition-delay: 0.2s;
+   -ms-transition-delay: 0.2s;
+   transition-delay: 0.2s;
+}
+
+.project-content:hover h3,
+.project-content:hover a.project-mask-info {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+   -webkit-transform: translateY(0px);
+   -moz-transform: translateY(0px);
+   -o-transform: translateY(0px);
+   -ms-transform: translateY(0px);
+   transform: translateY(0px);
 }
 
 /* ==================================================
