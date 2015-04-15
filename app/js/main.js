@@ -181,6 +181,16 @@ $(window).on('load',function(){
     }
   });
 
+  $('#home a[href^="#"]').on('click', function(e) {
+    var target = $(this.hash);
+    if( target.length ) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: target.offset().top
+        }, 1500);
+    }
+  });
+
   $("#contact-submit").on('click',function() {
     var $contact_form = $('#contact-form');
     var fields = $contact_form.serialize();
