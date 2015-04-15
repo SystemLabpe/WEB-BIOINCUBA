@@ -51,31 +51,31 @@ a, a:hover{
 }
 
 body.about-us #sections {
-  background: #CEEFE0;
+  background: #FFFFE2;
 }
 
 body.processes #sections {
-  background: #D1E7F2;
+  background: #FFFFFF;
 }
 
 body.projects #sections {
-  background: #F2F1DA;
+  background: #D4F0EC;
 }
 
 body.services #sections {
-  background: #D6D8E8;
+  background: #FFFFFF;
 }
 
 body.mentors #sections {
-  background: #D6D8E8;
+  background: #FFFFFF;
 }
 
 body.benefits #sections {
-  background: #D6D8E8;
+  background: #D4F0EC;
 }
 
 body.faq #sections {
-  background: #fff;
+  background: #FFFFE2;
 }
 
 /* ==================================================
@@ -210,6 +210,7 @@ body.faq #sections {
 .buttons a{
   display: inline-block;
   text-align: center;
+  text-decoration: none;
   color: #fff;
   background-color: transparent;
   min-width: 120px;
