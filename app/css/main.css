@@ -374,6 +374,7 @@ body.faq #sections {
   float: left;
   overflow: hidden;
   position: relative;
+  border-radius: 15px;
   -webkit-box-shadow: 1px 1px 2px #e6e6e6;
   -moz-box-shadow: 1px 1px 2px #e6e6e6;
   box-shadow: 1px 1px 2px #e6e6e6;
@@ -383,6 +384,7 @@ body.faq #sections {
 .project-content img {
    display: block;
    position: relative;
+    border-radius: 15px;
 }
 
 .project-content h3 {
@@ -397,7 +399,7 @@ body.faq #sections {
 }
 
 .project-content .project-mask {
-  border-radius: 15px;
+   border-radius: 15px;
    width: 100%;
    height: 100%;
    position: absolute;
@@ -459,7 +461,6 @@ body.faq #sections {
 }
 
 .project-content img {
-  border-radius: 15px;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
@@ -469,11 +470,11 @@ body.faq #sections {
 
 .project-content:hover img {
   border-radius: 50px;
-   -webkit-transform: scale(1.1,1.1);
-   -moz-transform: scale(1.1,1.1);
-   -o-transform: scale(1.1,1.1);
-   -ms-transform: scale(1.1,1.1);
-   transform: scale(1.1,1.1);
+  -webkit-transform: scale(1.1,1.1);
+  -moz-transform: scale(1.1,1.1);
+  -o-transform: scale(1.1,1.1);
+  -ms-transform: scale(1.1,1.1);
+  transform: scale(1.1,1.1);
 }
 
 .project-content h3 {
