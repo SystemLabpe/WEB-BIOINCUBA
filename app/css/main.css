@@ -749,10 +749,13 @@ body.faq #sections {
 ================================================== */
 #contact {
   color: #fff;
-  text-align: center;
   padding: 70px 0;
 }
 
+#contact h2 {
+  color: #fff;
+  margin-bottom: 10px;
+}
 .contact-info{
   text-align: left;
 }
