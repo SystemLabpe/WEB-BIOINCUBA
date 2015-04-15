@@ -224,14 +224,12 @@ $(window).on('load',function(){
       var $filteredData = $data.find('article[data-type=' + $filterType + ']');
     }
 
-    console.log($holder);
     $holder.quicksand($filteredData, {
       duration: 800,
       easing: 'easeInCubic',
       adjustHeight: false,
       adjustWidth :false
     });
-    console.log($filteredData);
 
     return false;
   });
