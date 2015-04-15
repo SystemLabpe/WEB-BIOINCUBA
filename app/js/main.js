@@ -171,7 +171,7 @@ $(window).on('load',function(){
     }
   });
 
-  $('a[href^="#"]').on('click', function(e) {
+  $('#menu nav ul li a[href^="#"]').on('click', function(e) {
     var target = $(this.hash);
     if( target.length ) {
         e.preventDefault();
