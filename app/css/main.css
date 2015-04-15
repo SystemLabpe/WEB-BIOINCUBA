@@ -9,9 +9,10 @@ body {
 }
 
 h2 {
-  margin: 0px auto;
-  padding: 10px 0px;
-  margin-bottom: 20px;
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 40px;
+  color: #4C4C4C;
 }
 
 a, a:hover{
@@ -20,7 +21,7 @@ a, a:hover{
 }
 
 /* ==================================================
-   Background
+  Background
 ================================================== */
 #background {
   background-image: url('../img/background.jpg');
@@ -40,7 +41,7 @@ a, a:hover{
 }
 
 /* ==================================================
-   Backgrounds Sections
+  Sections
 ================================================== */
 #sections {
   background:#d2edf5;
@@ -76,6 +77,10 @@ body.benefits #sections {
 
 body.faq #sections {
   background: #FFFFE2;
+}
+
+#sections section{
+  padding: 100px 0 0;
 }
 
 /* ==================================================
@@ -230,12 +235,6 @@ body.faq #sections {
 ================================================== */
 #about-us {
   text-align: left;
-  padding-top: 70px;
-}
-
-#about-us h2 {
-  display: inline-block;
-  color: #4C4C4C;
 }
 
 #about-us p {
@@ -262,15 +261,16 @@ body.faq #sections {
 }
 
 #about-us .dir-member h3{
+  height: 38px;
+  margin-bottom: 0;
   vertical-align: middle;
   font-size: 16px;
-  line-height: 0.9;
-  height: 38px;
+  line-height: 1.1;
   border-bottom: 2px solid #42705B;
 }
 
 #about-us .dir-member h4{
-  margin-top: 5px;
+  margin-top: 2px;
   font-size: 14px;
 }
 
@@ -293,7 +293,6 @@ body.faq #sections {
 #processes {
   color: #fff;
   text-align: center;
-  padding-top: 70px;
 }
 
 #processes .process {
@@ -303,22 +302,15 @@ body.faq #sections {
   border-radius: 25px;
 }
 
-#processes h2 {
-  display: inline-block;
-  color: #4C4C4C;
-}
-
 #processes h3 {
-  color: #fff;
   padding-bottom: 30px;
 }
 
 #processes p {
   margin-top: 30px;
-  color: #fff;
   font-size: 16px;
   text-align: justify;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.4px;
 }
 
 /* ==================================================
@@ -326,12 +318,10 @@ body.faq #sections {
 ================================================== */
 #projects {
   text-align: center;
-  padding-top: 70px;
 }
 
-#projects h2 {
-  display: inline-block;
-  color: #4C4C4C;
+#projects .filter {
+  margin: 10px;
 }
 
 #projects ul.filterOptions {
@@ -339,6 +329,7 @@ body.faq #sections {
 }
 
 #projects ul.filterOptions li {
+  margin: 5px;
   border: 1px solid transparent;
   border-radius: 3px;
   text-decoration: none;
@@ -529,12 +520,6 @@ body.faq #sections {
 #services {
   color: #fff;
   text-align: center;
-  padding-top: 70px;
-}
-
-#services h2 {
-  display: inline-block;
-  color: #4C4C4C;
 }
 
 .services .service {
@@ -559,26 +544,12 @@ body.faq #sections {
   vertical-align: middle;
   border: 1px solid #0196AF;
 }
-/*
-.service-content:hover {
-  background-color: #6B7ACE;
-}
-*/
+
 .service-content h3{
   font-size: 16px;
   color: #fff;
   line-height: 1.5;
   letter-spacing: 1px;
-  /*-webkit-transform: scaleY(1);
-  -moz-transform: scaleY(1);
-  -o-transform: scaleY(1);
-  -ms-transform: scaleY(1);
-  transform: scaleY(1);
-  -webkit-transition: all 0.7s ease-in-out;
-  -moz-transition: all 0.7s ease-in-out;
-  -o-transition: all 0.7s ease-in-out;
-  -ms-transition: all 0.7s ease-in-out;
-  transition: all 0.7s ease-in-out;*/
 }
 
 .service-content .mask {
@@ -592,19 +563,6 @@ body.faq #sections {
   top: 0;
   left: 0;
   padding: 20px 10px 0;
-  /*-webkit-transform: translateX(-100%);
-  -moz-transform: translateX(-100%);
-  -o-transform: translateX(-100%);
-  -ms-transform: translateX(-100%);
-  transform: translateX(-100%);
-  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  filter: alpha(opacity=100);
-  opacity: 1;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;*/
   -webkit-transition: all 0.5s linear;
   -moz-transition: all 0.5s linear;
   -o-transition: all 0.5s linear;
@@ -648,22 +606,12 @@ body.faq #sections {
 }
 
 .service-content:hover .mask{
-  /*-webkit-transform: translateX(0px);
-  -moz-transform: translateX(0px);
-  -o-transform: translateX(0px);
-  -ms-transform: translateX(0px);
-  transform: translateX(0px);*/
   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter: alpha(opacity=100);
   opacity: 1;
 }
 
 .service-content:hover h3 {
-  /*-webkit-transform: translateX(100%);
-  -moz-transform: translateX(100%);
-  -o-transform: translateX(100%);
-  -ms-transform: translateX(100%);
-  transform: translateX(100%);*/
   -webkit-transform: scale(10);
   -moz-transform: scale(10);
   -o-transform: scale(10);
@@ -690,12 +638,6 @@ body.faq #sections {
 ================================================== */
 #mentors {
   text-align: center;
-  padding-top: 70px;
-}
-
-#mentors h2 {
-  display: inline-block;
-  color: #4C4C4C;
 }
 
 #mentors .bx-controls .bx-controls-direction {
@@ -728,13 +670,8 @@ body.faq #sections {
    Benefits
 ================================================== */
 #benefits {
+  text-align: left;
   color: #646464;
-  padding-top: 70px;
-}
-
-#benefits h2 {
-  display: inline-block;
-  color: #4C4C4C;
 }
 
 #benefits .benefits-content {
@@ -747,21 +684,12 @@ body.faq #sections {
   float: none !important;
 }
 
-#benefits h3,p {
-  text-align: left;
-}
-
 /* ==================================================
    Faq
 ================================================== */
 #faq {
   text-align: center;
-  padding-top: 70px;
-}
-
-#faq h2 {
-  display: inline-block;
-  color: #4C4C4C;
+  padding: 100px 0 100px !important;
 }
 
 #faq .questions {
@@ -774,6 +702,7 @@ body.faq #sections {
 }
 
 .questions-list li{
+  margin-bottom: 50px;
   background: transparent;
   border: none;
   box-shadow: none;
@@ -823,7 +752,7 @@ body.faq #sections {
   padding: 70px 0;
 }
 
-#contact h3,p,ul{
+.contact-info{
   text-align: left;
 }
 
