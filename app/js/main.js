@@ -15,6 +15,8 @@ var sections = {
 };
 
 var mentors_slider = $('.mentors-slider').bxSlider({
+  auto: true,
+  autoDelay: 1000,
   slideWidth: 220,
   minSlides: 1,
   maxSlides: 5,
@@ -171,7 +173,7 @@ $(window).on('load',function(){
     }
   });
 
-  $('#menu nav ul li a[href^="#"]').on('click', function(e) {
+  $('#menu a[href^="#"]').on('click', function(e) {
     var target = $(this.hash);
     if( target.length ) {
         e.preventDefault();
@@ -226,12 +228,12 @@ $(window).on('load',function(){
 
     var $filterType = $(this).attr('class');
     $(this).parent().addClass('active');
-
-    if ($filterType == 'todos') {
-      var $filteredData = $data.find('article');
+    var $filteredData;
+    if ($filterType === 'todos') {
+      $filteredData = $data.find('article');
     }
     else {
-      var $filteredData = $data.find('article[data-type=' + $filterType + ']');
+      $filteredData = $data.find('article[data-type=' + $filterType + ']');
     }
 
     $holder.quicksand($filteredData, {
