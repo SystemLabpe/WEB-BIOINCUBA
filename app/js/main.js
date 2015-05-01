@@ -4,14 +4,14 @@ var main = $('body');
 var currentCls = 'home';
 var sections = {
   home: $('#home'),
-  about_us: $('#about-us'),
   processes: $('#processes'),
-  projects: $('#projects'),
   services: $('#services'),
+  testimonials: $('#testimonials'),
+  projects: $('#projects'),
   mentors: $('#mentors'),
-  benefits: $('#benefits'),
+  about_us: $('#about-us'),
   faq: $('#faq'),
-  contact: $('#contact'),
+  contact: $('#contact')
 };
 
 var mentors_slider = $('.mentors-slider').bxSlider({
