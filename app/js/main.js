@@ -66,6 +66,7 @@ function checkActive(a) {
   console.log(a);
   console.log(currentCls);
   console.log(previousCls);*/
+  console.log('A -> ',a);
   var c = a.data('class');
   if (c !== currentCls && isScrolledIntoView(a)) {
     changeBackground(c);
