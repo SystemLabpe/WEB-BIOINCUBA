@@ -17,8 +17,9 @@ class Contact_Form{
 
         $this->name = stripslashes($details['name']);
         $this->email = trim($details['email']);
-        $this->subject = stripslashes($details['subject']);
-        $this->message = stripslashes($details['message']);
+        $this->subject = 'CORREO WEB BIOINCUBA'
+        $this->phone = stripslashes($details['phone']);
+        $this->message = 'Nombre : ' + $this->name;
 
         $this->email_admin = $email_admin;
         $this->message_min_length = $message_min_length;
@@ -60,13 +61,6 @@ class Contact_Form{
         if($this->email && !$this->validateEmail())
         {
             $this->response_html .= '<p>Por favor ingrese un correo electrónico válido</p>';
-            $this->response_status = 0;
-        }
-
-        // Check message length
-        if(!$this->message || strlen($this->message) < $this->message_min_length)
-        {
-            $this->response_html .= '<p>Su mensaje debe tener al menos '.$this->message_min_length.' caracteres</p>';
             $this->response_status = 0;
         }
     }

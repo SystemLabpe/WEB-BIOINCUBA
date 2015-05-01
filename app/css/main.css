@@ -185,7 +185,6 @@ body.faq #sections {
 .home-content h1 {
   font-size: 32px;
   line-height: 40px;
-  font-style: italic;
   letter-spacing: 4px;
 }
 
@@ -206,24 +205,25 @@ body.faq #sections {
 }
 
 .home-content .buttons {
-  margin-top: 20px;
+  margin-top: 100px;
 }
 
 .buttons a{
   display: inline-block;
   text-align: center;
   text-decoration: none;
-  color: #fff;
+  color: #0097AC;
   background-color: transparent;
   min-width: 120px;
   padding: 8px 15px;
-  border: 1px solid #ffffff;
+  border: 1px solid #0097AC;
   border-radius: 5px;
   margin: 10px;
 }
 
 .buttons a:hover {
-  background-color: #F8B001;
+  background-color: #0097AC;
+  color: #fff;
 }
 
 
@@ -552,13 +552,21 @@ body.faq #sections {
 }
 
 .services .service {
-  width: 230px;
+  width: 270px;
+  margin: 0 auto;
 }
 
 .services .service img {
   position: relative;
   top: 25px;
   z-index: 1;
+}
+
+.services button {
+  background-color: #F8B001;
+  padding: 5px 30px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .service-content {
@@ -587,7 +595,7 @@ body.faq #sections {
   position: absolute;
   border-radius: 15px;
   background-color: #fff;
-  color: #646464;
+  color: #0196AF;
   overflow: hidden;
   top: 0;
   left: 0;
@@ -619,6 +627,7 @@ body.faq #sections {
 }
 
 .service-content .mask p {
+  margin-top: 15px;
   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
   opacity: 0;
@@ -662,6 +671,15 @@ body.faq #sections {
   opacity: 1;
 }
 
+.services .call {
+  float: right;
+  margin-top: 166px;
+  margin-right: 45px;
+}
+
+.services .call p{
+  font-size: 18px;
+}
 /* ==================================================
    Mentors
 ================================================== */
@@ -786,9 +804,15 @@ body.faq #sections {
 }
 
 .contact-form button {
+  background-color: #323232;
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 40px;
+}
+
+.contact-form button:hover {
+  background-color: #4C4C4C;
+  color: #fff;
 }
 
 .contact-form input {

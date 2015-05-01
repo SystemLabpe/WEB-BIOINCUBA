@@ -206,7 +206,6 @@ $(window).on('load',function(){
 
         if(response.status){
           $('#contact-form input').val('');
-          $('#contact-form textarea').val('');
         }
 
         $('#response').empty().html(response.html);
