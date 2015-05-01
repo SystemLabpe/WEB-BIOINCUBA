@@ -74,4 +74,16 @@
     font-size: 22px;
   }
 
+    /* ==================================================
+   Contact
+================================================== */
+  #contact .contact-content .contact-column {
+    display: block;
+  }
+
+  #contact .contact-info{
+    margin-top: 40px;
+    text-align: center;
+  }
+
 }

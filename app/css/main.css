@@ -915,6 +915,10 @@ body.faq #sections {
   float: none !important;
 }
 
+#contact .contact-info{
+  text-align: right;
+}
+
 .contact-form{
   text-align: center;
 }
