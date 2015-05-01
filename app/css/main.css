@@ -97,13 +97,7 @@ body.faq #sections {
 }
 
 .logoMenu {
-  display: inline-block;
-  margin-top: 0;
-  margin-left: 15px;
-  background-image: url('../img/logo-250x60.png');
-  width: 250px;
-  height: 60px;
-  cursor: pointer;
+  display: none;
 }
 
 .menu nav {
@@ -153,10 +147,12 @@ body.faq #sections {
 }
 
 .fixed-logoMenu {
+  display: inline-block;
+  margin: 7px 0 0 7px;
   background-image: url('../img/logo-color200x48.png');
+  cursor: pointer;
   width: 200px;
   height: 48px;
-  margin-top: 7px;
 }
 
 .menu nav ul li a.option-selected {
@@ -346,10 +342,12 @@ body.faq #sections {
 ================================================== */
 #projects {
   text-align: center;
+  padding-top: 70px;
 }
 
-#projects .filter {
-  margin: 10px;
+#projects h2 {
+  display: inline-block;
+  color: #4C4C4C;
 }
 
 #projects ul.filterOptions {
@@ -357,9 +355,7 @@ body.faq #sections {
 }
 
 #projects ul.filterOptions li {
-  margin: 5px;
   border: 1px solid transparent;
-  border-radius: 3px;
   text-decoration: none;
 }
 
@@ -393,7 +389,6 @@ body.faq #sections {
   float: left;
   overflow: hidden;
   position: relative;
-  border-radius: 15px;
   -webkit-box-shadow: 1px 1px 2px #e6e6e6;
   -moz-box-shadow: 1px 1px 2px #e6e6e6;
   box-shadow: 1px 1px 2px #e6e6e6;
@@ -403,7 +398,6 @@ body.faq #sections {
 .project-content img {
    display: block;
    position: relative;
-    border-radius: 15px;
 }
 
 .project-content h3 {
@@ -413,12 +407,10 @@ body.faq #sections {
    position: relative;
    font-size: 17px;
    padding: 10px;
-   background: rgba(0, 0, 0, 0.8);
-   margin: 20px 0 0 0;
+   background: rgba(0, 0, 0, 0.4);
 }
 
 .project-content .project-mask {
-   border-radius: 15px;
    width: 100%;
    height: 100%;
    position: absolute;
@@ -428,22 +420,25 @@ body.faq #sections {
 }
 
 .project-content .project-mask ul {
-  padding-top: 20px;
+  height:  118px;
+  margin: 5px 0 5px 0;
 }
 
 .project-content .project-mask li {
-   font-family: Georgia, serif;
-   font-style: italic;
-   font-size: 11px;
+   font-size: 12px;
+   font-style: oblique;
    position: relative;
    color: #fff;
    text-align: left;
    padding-left: 10px;
-   padding-bottom: 8px;
+   padding-bottom: 3px;
+}
+
+.project-content .project-mask li strong {
+   font-size: 14px;
 }
 
 .project-content .project-mask .projectS-mask-info{
-  padding-top: 55px;
   padding-left: 90px;
 }
 
@@ -459,13 +454,30 @@ body.faq #sections {
    color: #000;
 }
 
+#projects button {
+  color: #fff;
+  background-color: #0097AC;
+  padding: 5px 30px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#projects .call {
+  margin-top: 15px;
+}
+
+#projects .call p{
+  color: #0097AC;
+  font-size: 18px;
+}
+
 /*------Transition-------*/
 
 .project-content .project-mask {
    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
    filter: alpha(opacity=0);
    opacity: 0;
-   background-color: rgba(1,150,175, 0.7);
+   background-color: rgba(77,77,77, 0.9);
    -webkit-transition: all 0.4s ease-in-out;
    -moz-transition: all 0.4s ease-in-out;
    -o-transition: all 0.4s ease-in-out;
@@ -488,7 +500,6 @@ body.faq #sections {
 }
 
 .project-content:hover img {
-  border-radius: 50px;
   -webkit-transform: scale(1.1,1.1);
   -moz-transform: scale(1.1,1.1);
   -o-transform: scale(1.1,1.1);
@@ -680,18 +691,103 @@ body.faq #sections {
 .services .call p{
   font-size: 18px;
 }
+
+/* ==================================================
+   Testimonials
+================================================== */
+#testimonials {
+  text-align: center;
+  padding-top: 70px;
+  color: #fff;
+}
+
+#testimonials h2 {
+  display: inline-block;
+  color: #fff;
+}
+
+#testimonials h4 {
+  font-style: normal;
+  text-align: left;
+  font-weight: bold;
+}
+
+.testimonial {
+  margin-right: 25px;
+  margin-bottom: 25px;
+  font-size: 16px;
+  font-style: oblique;
+  text-align: justify;
+}
+
+.testimonial .testimonial-author {
+  margin-top: 15px;
+}
+
+.testimonial .testimonial-author .testimonial-pic {
+  border-radius: 50%;
+  width: 87px;
+  height: 87px;
+  overflow: hidden;
+  margin-bottom: 25px;
+  float: left;
+}
+
+.testimonial .testimonial-author p {
+  font-style: normal;
+  padding: 35px 0 0 100px;
+}
+
+#testimonials .bx-wrapper .bx-pager{
+  text-align: right;
+  bottom: 60px;
+  right: 50px;
+  overflow: hidden;
+}
+
+#testimonials .bx-wrapper .bx-pager .bx-pager-item a{
+  text-indent: 9999px;
+  width: 15px;
+  height: 15px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%x;
+}
+
+#testimonials .bx-controls .bx-controls-direction {
+  display: none;
+}
+
+#testimonials .bx-wrapper .bx-viewport {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  left: -5px;
+  background: transparent;
+}
+
+
 /* ==================================================
    Mentors
 ================================================== */
 #mentors {
   text-align: center;
+  padding-top: 70px;
+  color: #fff;
 }
 
-#mentors .bx-controls .bx-controls-direction {
-  display: none;
+#mentors h2 {
+  display: inline-block;
+  color: #fff;
+}
+
+#mentors h5 {
+  margin-bottom: 20px;
 }
 
 .mentor {
+  height: 300px;
   margin-bottom: 25px;
 }
 
@@ -704,6 +800,27 @@ body.faq #sections {
   margin-bottom: 25px;
 }
 
+.mentor a {
+  font-size: 20px;
+  color: #4D4D4D;
+  background-color: #fff;
+  padding:5px 10px;
+  border-radius: 50%;
+}
+
+.mentor a:hover {
+   color: #fff;
+   background-color: #4D4D4D;
+}
+
+#mentors .bx-wrapper .bx-pager{
+    bottom: -80px;
+}
+
+#mentors .bx-controls .bx-controls-direction {
+  display: none;
+}
+
 #mentors .bx-wrapper .bx-viewport {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
@@ -712,7 +829,6 @@ body.faq #sections {
   left: -5px;
   background: transparent;
 }
-
 /* ==================================================
    Faq
 ================================================== */
@@ -723,7 +839,7 @@ body.faq #sections {
 
 #faq .questions {
   padding: 0 15px;
-  text-align: left;
+  text-align: center;
 }
 
 .questions-list {
@@ -754,6 +870,7 @@ body.faq #sections {
 }
 
 .questions-list li p {
+  text-align: justify;
   padding: 20px 20px 0;
 }
 
@@ -763,6 +880,7 @@ body.faq #sections {
   height: 0;
 }
 
+/*
 .questions-list li.divider:before {
   content: " ";
 }
@@ -771,6 +889,8 @@ body.faq #sections {
   content: "• ";
   color: #F8B001;
 }
+*/
+
 
 /* ==================================================
    Contact

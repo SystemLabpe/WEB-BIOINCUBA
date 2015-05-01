@@ -24,6 +24,13 @@ var mentors_slider = $('.mentors-slider').bxSlider({
   slideMargin: 10
 });
 
+var testimonials_slider = $('.testimonials-slider').bxSlider({
+  auto: true,
+  autoDelay: 1000,
+  slideWidth: 900,
+  slideMargin: 10
+});
+
 var fixed_menu_active = false;
 
 function changeBackground(c){
@@ -80,7 +87,9 @@ function onchangeSection(){
 }
 
 function displayHeader() {
-  if($(window).scrollTop()>=$('#home-content').position().top){
+  console.log($(window).scrollTop());
+  console.log($('#home-content').position().top);
+  if($(window).scrollTop()>=$('#home-content').position().top - 120){
     fixed_menu_active = true;
     $('#menu').addClass("fixed-menu");
     $('#logoMenu').addClass("fixed-logoMenu");
