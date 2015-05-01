@@ -103,6 +103,8 @@ gulp.task('copy', function() {
   .pipe(gulp.dest('./dist/img'));
   gulp.src('./app/php/**')
   .pipe(gulp.dest('./dist/php'));
+  gulp.src('./app/files/**')
+  .pipe(gulp.dest('./dist/files'));
 });
 
 // Vigila cambios que se produzcan en el código

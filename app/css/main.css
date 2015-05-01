@@ -803,14 +803,15 @@ body.faq #sections {
   font-size: 18px;
 }
 
-.contact-form button {
+.contact-form a {
   background-color: #323232;
+  color: #fff;
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 40px;
 }
 
-.contact-form button:hover {
+.contact-form a:hover {
   background-color: #4C4C4C;
   color: #fff;
 }
@@ -819,7 +820,8 @@ body.faq #sections {
   margin-bottom: 5px;
 }
 
-#contact-submit {
+#contact-submit1, #contact-submit2 {
+  font-size: 16px;
   background-color: #F8B001;
   margin-bottom: 0 !important;
 }

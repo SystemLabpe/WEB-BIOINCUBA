@@ -8,7 +8,7 @@ header('Cache-Control: no-cache, must-revalidate');
 header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
 header('Content-type: application/json');
 
-$admin_email = 'jmosquera92r@gmail.com'; // Your Email
+$admin_email = 'josuebarriosm@gmail.com'; // Your Email
 $message_min_length = 20; // Min Message Length
 
 
@@ -17,9 +17,10 @@ class Contact_Form{
 
         $this->name = stripslashes($details['name']);
         $this->email = trim($details['email']);
-        $this->subject = 'CORREO WEB BIOINCUBA'
+        $this->subject = 'CORREO WEB BIOINCUBA';
         $this->phone = stripslashes($details['phone']);
-        $this->message = 'Nombre : ' + $this->name;
+        $this->message = "Información de contacto\r\n\r\nNombre: ".$this->name."\r\nCorreo: "
+        .$this->email."\r\nCelular: ".$this->phone;
 
         $this->email_admin = $email_admin;
         $this->message_min_length = $message_min_length;
