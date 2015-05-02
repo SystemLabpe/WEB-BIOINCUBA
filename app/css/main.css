@@ -53,7 +53,7 @@ p {
   border-radius: 5px;
   color: #FFFFFF;
   font-size: 16px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .btn-orange {
@@ -705,9 +705,14 @@ body.contact #sections {
   padding: 35px 0 0 100px;
 }
 
+#testimonials .bx-wrapper {
+  margin: 0 auto;
+
+}
+
 #testimonials .bx-wrapper .bx-pager{
   text-align: right;
-  bottom: 150px;
+  bottom: 30px;
   right: 50px;
   overflow: hidden;
 }
@@ -742,7 +747,6 @@ body.contact #sections {
 }
 
 #mentors.mentor {
-  height: 300px;
   margin-bottom: 25px;
 }
 
@@ -756,6 +760,7 @@ body.contact #sections {
 }
 
 #mentors .mentor a {
+  display: inline-block;
   font-size: 20px;
   color: #4D4D4D;
   background-color: #FFFFFF;
