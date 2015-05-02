@@ -264,10 +264,6 @@ body.contact #sections {
 /* ==================================================
    Processes
 ================================================== */
-#processes {
-
-}
-
 #processes h2 {
   color: #4C4C4C;
 }
@@ -311,11 +307,7 @@ body.contact #sections {
 /* ==================================================
    Services
 ================================================== */
-#services {
-
-}
-
-.services .service {
+#services .services .service {
   width: 270px;
   margin: 0 auto;
 }
@@ -436,13 +428,8 @@ body.contact #sections {
 /* ==================================================
    About-us
 ================================================== */
-#about-us {
-
-}
-
 #about-us p {
   text-align: left;
-  font-size: 18px;
   line-height: 1.8;
 }
 
@@ -688,7 +675,6 @@ body.contact #sections {
 /* ==================================================
    Testimonials
 ================================================== */
-
 #testimonials h3 {
   text-align: left;
   font-weight: bold;
@@ -751,7 +737,6 @@ body.contact #sections {
 /* ==================================================
    Mentors
 ================================================== */
-
 #mentors h4 {
   margin-bottom: 20px;
 }
