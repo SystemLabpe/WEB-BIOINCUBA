@@ -1,23 +1,86 @@
-html {
-  /*height: 100%;*/
-}
+/* ==================================================
+   Basic Styles
+================================================== */
 
 body {
-  background: #fff;
+  background: #FFFFFF;
+  color: #FFFFFF;
   height: 100%;
   font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
-}
-
-h2 {
-  display: inline-block;
-  margin-top: 0;
-  margin-bottom: 40px;
-  color: #4C4C4C;
+  font-size: 16px;
 }
 
 a, a:hover{
   color: #000;
   text-decoration: none;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 4px;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 30px;
+  color: #FFFFFF;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+p {
+  font-size: 16px;
+}
+
+/* ==================================================
+  Buttons
+================================================== */
+
+.btn-bio {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  min-width: 120px;
+  padding: 4px 15px;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.btn-orange {
+  background-color: #F8B001;
+}
+
+.btn-orange:hover, .btn-orange:focus {
+  color: #FFFFFF;
+  background-color: #F2C044;
+}
+
+.btn-blue {
+  background-color: #0097AC;
+}
+
+.btn-blue:hover, .btn-blue:focus {
+  color: #FFFFFF;
+  background-color: #44B7C6;
+}
+
+.btn-grey {
+  background-color: #323232
+}
+
+.btn-grey:hover, .btn-grey:focus {
+  color: #FFFFFF;
+  background-color: #4C4C4C;
 }
 
 /* ==================================================
@@ -85,6 +148,7 @@ body.contact #sections {
 
 #sections section{
   padding: 50px 0 100px;
+  text-align: center;
 }
 
 /* ==================================================
@@ -97,7 +161,6 @@ body.contact #sections {
   top: 3%;
   width: 90%;
   background: transparent;
-  color:  #fff;
   height: 3.5em;
   line-height: 1.5em;
   font-size: 18px;
@@ -142,14 +205,14 @@ body.contact #sections {
 
 .menu nav ul li a:active {
   background-color: #F8B001;
-  color: #fff;
+  color: #FFFFFF;
 }
 
 .fixed-menu {
   left: 0;
   top: 0;
   width: 100%;
-  background: #fff;
+  background: #FFFFFF;
   color:  #F8B102;
   box-shadow: 0 0 0.15em 0 rgba(0,0,0,0.1);
 }
@@ -165,7 +228,7 @@ body.contact #sections {
 
 .menu nav ul li a.option-selected {
   background-color: #F8B001;
-  color: #fff;
+  color: #FFFFFF;
 }
 
 #toggle {
@@ -178,7 +241,6 @@ body.contact #sections {
 ================================================== */
 #home {
   width: 100%;
-  color: #fff;
 }
 
 .home-content{
@@ -186,32 +248,19 @@ body.contact #sections {
   padding-bottom: 120px;
 }
 
-.home-content h1 {
-  font-size: 32px;
-  line-height: 40px;
-  letter-spacing: 4px;
+#home-content {
+  display: table;
 }
 
-.home-content .title-middle {
-  position: absolute;
-  right: 0;
-  padding-right: 15px;
-}
-
-.home-content h1 strong{
-  font-size: 36px;
-}
-
-.home-content .slogan {
-  display: block;
-  font-size: 18px;
-  text-align: center;
+#home-content .home-column {
+  display: table-cell;
+  float: none;
 }
 
 .home-content .buttons {
   margin-top: 100px;
 }
-
+/*
 .buttons a{
   display: inline-block;
   text-align: center;
@@ -222,13 +271,13 @@ body.contact #sections {
   padding: 8px 15px;
   border: 1px solid #0097AC;
   border-radius: 5px;
-  margin: 10px;
+  margin: 10px 10px 0;
 }
 
 .buttons a:hover {
   background-color: #0097AC;
-  color: #fff;
-}
+  color: #FFFFFF;
+}*/
 
 /* ==================================================
    Processes
@@ -240,7 +289,7 @@ body.contact #sections {
 
 #processes .process {
   height: 630px;
-  background-color: #fff;
+  background-color: #FFFFFF;
   padding: 20px 10px 30px;
   border: 1px solid #0097AC;
   border-radius: 25px;
@@ -277,12 +326,12 @@ body.contact #sections {
    Services
 ================================================== */
 #services {
-  color: #fff;
+  color: #FFFFFF;
   text-align: center;
 }
 
 #services h2 {
-  color: #fff;
+  color: #FFFFFF;
 }
 
 .services .service {
@@ -307,7 +356,7 @@ body.contact #sections {
   display: table-cell;
   position: relative;
   border-radius: 15px;
-  background-color: #fff;
+  background-color: #FFFFFF;
   overflow: hidden;
   height: 200px;
   width: 1%;
@@ -328,7 +377,7 @@ body.contact #sections {
   height: 100%;
   position: absolute;
   border-radius: 15px;
-  background-color: #fff;
+  background-color: #FFFFFF;
   color: #0196AF;
   overflow: hidden;
   top: 0;
@@ -529,7 +578,7 @@ body.contact #sections {
 }
 
 #projects ul.filterOptions li.active a{
-  color: #fff;
+  color: #FFFFFF;
 }
 
 .project {
@@ -557,7 +606,7 @@ body.contact #sections {
 
 .project-content h3 {
    text-transform: uppercase;
-   color: #fff;
+   color: #FFFFFF;
    text-align: center;
    position: relative;
    font-size: 17px;
@@ -583,7 +632,7 @@ body.contact #sections {
    font-size: 12px;
    font-style: oblique;
    position: relative;
-   color: #fff;
+   color: #FFFFFF;
    text-align: left;
    padding-left: 10px;
    padding-bottom: 3px;
@@ -602,7 +651,7 @@ body.contact #sections {
   font-size: 20px;
   display: inline-block;
   text-decoration: none;
-  color: #fff;
+  color: #FFFFFF;
 }
 
 .project-content a.project-mask-info:hover {
@@ -610,7 +659,7 @@ body.contact #sections {
 }
 
 #projects button {
-  color: #fff;
+  color: #FFFFFF;
   background-color: #0097AC;
   padding: 5px 30px;
   font-size: 16px;
@@ -715,12 +764,12 @@ body.contact #sections {
 #testimonials {
   text-align: center;
   padding-top: 70px;
-  color: #fff;
+  color: #FFFFFF;
 }
 
 #testimonials h2 {
   display: inline-block;
-  color: #fff;
+  color: #FFFFFF;
 }
 
 #testimonials h4 {
@@ -790,12 +839,12 @@ body.contact #sections {
 #mentors {
   text-align: center;
   padding-top: 70px;
-  color: #fff;
+  color: #FFFFFF;
 }
 
 #mentors h2 {
   display: inline-block;
-  color: #fff;
+  color: #FFFFFF;
 }
 
 #mentors h5 {
@@ -819,13 +868,13 @@ body.contact #sections {
 .mentor a {
   font-size: 20px;
   color: #4D4D4D;
-  background-color: #fff;
+  background-color: #FFFFFF;
   padding:5px 10px;
   border-radius: 50%;
 }
 
 .mentor a:hover {
-   color: #fff;
+   color: #FFFFFF;
    background-color: #4D4D4D;
 }
 
@@ -918,13 +967,17 @@ body.contact #sections {
    Contact
 ================================================== */
 #contact {
-  color: #fff;
+  color: #FFFFFF;
   padding: 70px 0 20px;
 }
 
 #contact h2 {
-  color: #fff;
+  color: #FFFFFF;
   margin-bottom: 10px;
+}
+
+#contact-form {
+  margin-top: 80px;
 }
 
 #contact .contact-content {
@@ -949,17 +1002,9 @@ body.contact #sections {
   font-size: 18px;
 }
 
-.contact-form a {
-  background-color: #323232;
-  color: #fff;
-  font-size: 16px;
-  font-weight: bold;
-  margin-bottom: 40px;
-}
-
 .contact-form a:hover {
   background-color: #4C4C4C;
-  color: #fff;
+  color: #FFFFFF;
 }
 
 .contact-form input {
@@ -967,9 +1012,9 @@ body.contact #sections {
 }
 
 #contact-submit1, #contact-submit2 {
-  font-size: 16px;
-  background-color: #F8B001;
-  margin-bottom: 0 !important;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px 5px;
 }
 
 #contact .social-icons {
@@ -987,6 +1032,6 @@ body.contact #sections {
   font-size: 1.8em;
   line-height: 50px;
   text-align: center;
-  color: #FFF;
+  color: #FFFFFF;
   color: rgba(255, 255, 255, 0.8);
 }
