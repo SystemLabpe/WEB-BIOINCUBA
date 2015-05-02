@@ -64,6 +64,10 @@
     top: 120px;
   }
 
+  #home .home-content .home-column {
+    display: block;
+  }
+
   .home-content h1 {
     font-size: 20px;
     line-height: 30px;
