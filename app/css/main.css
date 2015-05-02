@@ -37,7 +37,7 @@ h4 {
 }
 
 p {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 /* ==================================================
@@ -260,31 +260,16 @@ body.contact #sections {
 .home-content .buttons {
   margin-top: 100px;
 }
-/*
-.buttons a{
-  display: inline-block;
-  text-align: center;
-  text-decoration: none;
-  color: #0097AC;
-  background-color: transparent;
-  min-width: 120px;
-  padding: 8px 15px;
-  border: 1px solid #0097AC;
-  border-radius: 5px;
-  margin: 10px 10px 0;
-}
-
-.buttons a:hover {
-  background-color: #0097AC;
-  color: #FFFFFF;
-}*/
 
 /* ==================================================
    Processes
 ================================================== */
 #processes {
+
+}
+
+#processes h2 {
   color: #4C4C4C;
-  text-align: center;
 }
 
 #processes .process {
@@ -315,6 +300,7 @@ body.contact #sections {
 
 #processes li {
   padding-bottom: 10px;
+  color: #4C4C4C;
 }
 
 #processes li:before {
@@ -326,12 +312,7 @@ body.contact #sections {
    Services
 ================================================== */
 #services {
-  color: #FFFFFF;
-  text-align: center;
-}
 
-#services h2 {
-  color: #FFFFFF;
 }
 
 .services .service {
@@ -345,18 +326,12 @@ body.contact #sections {
   z-index: 1;
 }
 
-.services button {
-  background-color: #F8B001;
-  padding: 5px 30px;
-  font-size: 16px;
-  font-weight: bold;
-}
-
 .service-content {
   display: table-cell;
   position: relative;
   border-radius: 15px;
   background-color: #FFFFFF;
+  color: #0097AC;
   overflow: hidden;
   height: 200px;
   width: 1%;
@@ -367,7 +342,6 @@ body.contact #sections {
 
 .service-content h3{
   font-size: 16px;
-  color: #0097AC;
   line-height: 1.5;
   letter-spacing: 1px;
 }
@@ -377,8 +351,6 @@ body.contact #sections {
   height: 100%;
   position: absolute;
   border-radius: 15px;
-  background-color: #FFFFFF;
-  color: #0196AF;
   overflow: hidden;
   top: 0;
   left: 0;
@@ -411,6 +383,7 @@ body.contact #sections {
 
 .service-content .mask p {
   margin-top: 15px;
+  font-size: 16px;
   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
   opacity: 0;
@@ -460,21 +433,11 @@ body.contact #sections {
   margin-right: 45px;
 }
 
-.services .call p{
-  font-size: 18px;
-}
-
-
 /* ==================================================
    About-us
 ================================================== */
 #about-us {
-  text-align: center;
-  color: #FFFFFF;
-}
 
-#about-us h2{
-  color: #FFFFFF;
 }
 
 #about-us p {
@@ -528,19 +491,6 @@ body.contact #sections {
     width: 100%;
     height: 100%;
 }
-
-/* Curve border
-#about-us .border-top {
-  background: url('../img/benefits/border-top-2.png') center top no-repeat transparent;
-  width: 100%;
-  height: 90px;
-  position: absolute;
-  margin-top: -90px;
-  left: 0;
-  z-index: 1;
-}
-*/
-
 
 /* ==================================================
    Projects
@@ -896,13 +846,7 @@ body.contact #sections {
    Contact
 ================================================== */
 #contact {
-  color: #FFFFFF;
-  padding: 70px 0 20px;
-}
-
-#contact h2 {
-  color: #FFFFFF;
-  margin-bottom: 10px;
+  padding: 70px 0 50px;
 }
 
 #contact-form {
@@ -925,10 +869,6 @@ body.contact #sections {
 
 .contact-form{
   text-align: center;
-}
-
-.contact-form p {
-  font-size: 18px;
 }
 
 .contact-form a:hover {
