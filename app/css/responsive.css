@@ -6,6 +6,7 @@
   .menu nav {
     display: none;
     position: static;
+    margin-top: 0;
     background:#fff;
   }
 
@@ -27,7 +28,7 @@
     display: block;
     width: 100%;
     height: auto;
-    border-top: 1px dashed #F8B001;
+    border-top: 1px solid #F8B001;
     border-spacing: inherit;
   }
 
@@ -78,7 +79,7 @@
     font-size: 22px;
   }
 
-    /* ==================================================
+/* ==================================================
    Contact
 ================================================== */
   #contact .contact-content .contact-column {
@@ -89,5 +90,13 @@
     margin-top: 40px;
     text-align: center;
   }
+
+/* ==================================================
+   Testimonials
+================================================== */
+  #testimonials .bx-wrapper .bx-pager{
+  bottom: -30px;
+  overflow: hidden;
+}
 
 }
