@@ -147,7 +147,7 @@ body.contact #sections {
 }
 
 #sections section{
-  padding: 50px 0 100px;
+  padding: 100px 0 100px;
   text-align: center;
 }
 
@@ -266,7 +266,7 @@ body.contact #sections {
 }
 
 .home-content .buttons {
-  margin-top: 100px;
+  margin: 150px 0 0;
 }
 
 .home-content .buttons div{
@@ -283,7 +283,7 @@ body.contact #sections {
 #processes .process {
   height: 630px;
   max-width: 500px;
-  margin: 0 auto;
+  margin: 0 auto 30px;
   background-color: #FFFFFF;
   padding: 20px 10px 30px;
   border: 1px solid #0097AC;
@@ -501,7 +501,7 @@ body.contact #sections {
 }
 
 #projects ul.filterOptions {
-  text-align: left;
+  text-align: center;
 }
 
 #projects ul.filterOptions li {
