@@ -254,13 +254,25 @@ body.contact #sections {
 
 #home-content .home-column {
   display: table-cell;
-  float: none;
+}
+
+.home-content .home-logo{
+  margin: 0 auto;
+}
+
+.home-content h1{
+  max-width: 400px;
+  margin: 20px auto 0;
 }
 
 .home-content .buttons {
   margin-top: 100px;
 }
 
+.home-content .buttons div{
+  display: inline-block;
+  padding: 20px 0 0;
+}
 /* ==================================================
    Processes
 ================================================== */
@@ -270,6 +282,8 @@ body.contact #sections {
 
 #processes .process {
   height: 630px;
+  max-width: 500px;
+  margin: 0 auto;
   background-color: #FFFFFF;
   padding: 20px 10px 30px;
   border: 1px solid #0097AC;
@@ -893,4 +907,12 @@ body.contact #sections {
   text-align: center;
   color: #FFFFFF;
   color: rgba(255, 255, 255, 0.8);
+}
+
+/* ==================================================
+   Copyright
+================================================== */
+.copyright {
+  display: block;
+  font-size: 14px;
 }

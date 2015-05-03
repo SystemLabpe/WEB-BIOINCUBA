@@ -68,14 +68,38 @@
     display: block;
   }
 
-  .home-content h1 {
-    font-size: 20px;
-    line-height: 30px;
-    letter-spacing: 0;
+  .home-content .home-logo{
+    max-width: 80%;
   }
 
-  .home-content h1 strong{
-    font-size: 22px;
+  .home-content .buttons {
+    margin: 50px 0 100px;
+  }
+
+  /* ==================================================
+   Processes
+================================================== */
+
+  #processes .process {
+    height: auto;
+    margin: 0 auto 30px;
+  }
+
+    /* ==================================================
+   Services
+================================================== */
+
+  .services .call {
+    margin: 40px auto;
+    float: none;
+  }
+
+  .services .call p {
+    text-align: center;
+  }
+
+  .services .call a {
+    float: none !important;
   }
 
     /* ==================================================
@@ -86,8 +110,20 @@
   }
 
   #contact .contact-info{
-    margin-top: 40px;
+    margin-top: 50px;
     text-align: center;
   }
+
+  #contact-form {
+    margin-top: 40px;
+  }
+
+  /* ==================================================
+   Copyright
+================================================== */
+.copyright {
+  display: block;
+  font-size: 12px;
+}
 
 }
