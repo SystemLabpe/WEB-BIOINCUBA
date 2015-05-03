@@ -2,6 +2,7 @@
 
 var main = $('body');
 var currentCls = 'home';
+var currentSection = 'home';
 var sections = {
   home: $('#home'),
   processes: $('#processes'),
@@ -24,7 +25,7 @@ var mentors_slider = $('.mentors-slider').bxSlider({
   slideMargin: 10
 });
 
-var testimonials_slider = $('.testimonials-slider').bxSlider({
+$('.testimonials-slider').bxSlider({
   auto: true,
   autoDelay: 1000,
   slideWidth: 900,
@@ -40,7 +41,7 @@ function changeBackground(c){
 
 function changeOptionSelected(){
   $('#menu nav>ul>li>a').removeClass('option-selected');
-  $('#menu nav ul li a[href="#'+currentCls+'"]').addClass('option-selected');
+  $('#menu nav ul li a[href="#'+currentSection+'"]').addClass('option-selected');
 }
 
 function isScrolledIntoView(c) {
@@ -50,30 +51,11 @@ function isScrolledIntoView(c) {
   return ((a <= d) && (a >= e));
 }
 
-function isScrolledIntoTopView(c) {
-  var w_scrl_top = $(window).scrollTop();
-  var e_offset   = $(c).offset().top;
-  var e_height   = $(c).height();
-  /*console.log(e_offset);
-  console.log(e_height);
-  console.log(w_scrl_top);
-  console.log("");*/
-  return (e_offset + e_height >= w_scrl_top);
-}
-
 function checkActive(a) {
-  /*console.log("");
-  console.log(a);
-  console.log(currentCls);
-  console.log(previousCls);*/
   var c = a.data('class');
   if (c !== currentCls && isScrolledIntoView(a)) {
     changeBackground(c);
     currentCls = c;
-  }
-  //console.log($(a).height());
-  if(isScrolledIntoTopView(a)){
-    changeOptionSelected();
   }
 }
 
@@ -87,9 +69,9 @@ function onchangeSection(){
 }
 
 function displayHeader() {
-  console.log($(window).scrollTop());
-  console.log($('#home-content').position().top);
-  if($(window).scrollTop()>=$('#home-content').position().top - 120){
+  var windowScrollTop = $(window).scrollTop();
+
+  if(windowScrollTop>=$('#home-content').position().top - 120 || $( window ).width() <= 768){
     fixed_menu_active = true;
     $('#menu').addClass("fixed-menu");
     $('#logoMenu').addClass("fixed-logoMenu");
@@ -99,6 +81,21 @@ function displayHeader() {
     $('#menu').removeClass("fixed-menu");
     $('#logoMenu').removeClass("fixed-logoMenu");
   }
+
+  //get current section
+  if((windowScrollTop >= $('#home').position().top -100 && windowScrollTop < $('#services').position().top - 100) || windowScrollTop == 0) {
+    currentSection = 'home';
+  }else if(windowScrollTop >= $('#services').position().top - 100 && windowScrollTop < $('#projects').position().top -100){
+    currentSection = 'services';
+  }else if(windowScrollTop >= $('#projects').position().top - 100 && windowScrollTop < $('#about-us').position().top -100){
+    currentSection = 'projects';
+  }else if(windowScrollTop >= $('#about-us').position().top - 100 && windowScrollTop < $('#contact').position().top -500){
+    currentSection = 'about-us';
+  }else{
+    currentSection = 'contact';
+  }
+
+  changeOptionSelected();
 }
 
 function mentors_resize() {
@@ -145,6 +142,7 @@ $( window ).scroll(function() {
 });
 
 $( window ).resize(function() {
+  displayHeader();
   mentors_resize();
 });
 
@@ -245,13 +243,13 @@ $(window).on('load',function(){
   });
 
   // quicksand
-  var $filterType = $('#filterOptions li.active a').attr('class');
+  $('#filterOptions li.active a').attr('class');
 
   var $holder = $('#project-list');
 
   var $data = $holder.clone();
 
-  $('#filterOptions li a').click(function(e) {
+  $('#filterOptions li a').click(function() {
 
     $('#filterOptions li').removeClass('active');
 
