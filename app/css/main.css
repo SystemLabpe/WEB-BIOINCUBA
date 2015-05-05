@@ -18,7 +18,8 @@ a, a:hover{
 h1 {
   font-size: 32px;
   line-height: 40px;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
+  font-style: oblique;
 }
 
 h2 {
