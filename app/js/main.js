@@ -1,19 +1,10 @@
 "use strict";
 
 var main = $('body');
-var currentCls = 'home';
+
+var currentPart = 'home';
+
 var currentSection = 'home';
-var sections = {
-  home: $('#home'),
-  processes: $('#processes'),
-  services: $('#services'),
-  testimonials: $('#testimonials'),
-  projects: $('#projects'),
-  mentors: $('#mentors'),
-  about_us: $('#about-us'),
-  faq: $('#faq'),
-  contact: $('#contact')
-};
 
 var mentors_slider = $('.mentors-slider').bxSlider({
   auto: true,
@@ -34,43 +25,52 @@ $('.testimonials-slider').bxSlider({
 
 var fixed_menu_active = false;
 
-function changeBackground(c){
+function changeBackground(){
   main.removeClass();
-  main.attr('class',c);
+  main.attr('class',currentSection);
 }
 
 function changeOptionSelected(){
   $('#menu nav>ul>li>a').removeClass('option-selected');
-  $('#menu nav ul li a[href="#'+currentSection+'"]').addClass('option-selected');
-}
-
-function isScrolledIntoView(c) {
-  var e = $(window).scrollTop();
-  var d = e + $(window).height();
-  var a = $(c).offset().top;
-  return ((a <= d) && (a >= e));
-}
-
-function checkActive(a) {
-  var c = a.data('class');
-  if (c !== currentCls && isScrolledIntoView(a)) {
-    changeBackground(c);
-    currentCls = c;
-  }
+  $('#menu nav ul li a[href="#'+currentPart+'"]').addClass('option-selected');
 }
 
 function onchangeSection(){
-  for (var section in sections) {
-    var a = sections[section];
-    if (sections.hasOwnProperty(section)) {
-      checkActive(a);
-    }
+  var windowScrollTop = $(window).scrollTop();
+  //get current section
+  if((windowScrollTop >= $('#home').position().top -100 && windowScrollTop < $('#processes').position().top - 100) || windowScrollTop === 0) {
+    currentPart = 'home';
+    currentSection = 'home';
+  }else if(windowScrollTop >= $('#processes').position().top - 100 && windowScrollTop < $('#services').position().top -100){
+    currentPart = 'home';
+    currentSection = 'processes';
+  }else if(windowScrollTop >= $('#services').position().top - 100 && windowScrollTop < $('#testimonials').position().top -100){
+    currentPart = 'services';
+    currentSection = 'services';
+  }else if(windowScrollTop >= $('#testimonials').position().top - 100 && windowScrollTop < $('#projects').position().top -100){
+    currentPart = 'services';
+    currentSection = 'testimonials';
+  }else if(windowScrollTop >= $('#projects').position().top - 100 && windowScrollTop < $('#mentors').position().top -100){
+    currentPart = 'projects';
+    currentSection = 'projects';
+  }else if(windowScrollTop >= $('#mentors').position().top - 100 && windowScrollTop < $('#about-us').position().top -100){
+    currentPart = 'projects';
+    currentSection = 'mentors';
+  }else if(windowScrollTop >= $('#about-us').position().top - 100 && windowScrollTop < $('#faq').position().top -100){
+    currentPart = 'about-us';
+    currentSection = 'about-us';
+  }else if(windowScrollTop >= $('#faq').position().top - 100 && windowScrollTop < $('#contact').position().top -500){
+    currentPart = 'about-us';
+    currentSection = 'faq';
+  }else{
+    currentSection = 'contact';
   }
+  changeOptionSelected();
+  changeBackground();
 }
 
 function displayHeader() {
   var windowScrollTop = $(window).scrollTop();
-
   if(windowScrollTop>=$('#home-content').position().top - 120 || $( window ).width() <= 768){
     fixed_menu_active = true;
     $('#menu').addClass("fixed-menu");
@@ -81,21 +81,6 @@ function displayHeader() {
     $('#menu').removeClass("fixed-menu");
     $('#logoMenu').removeClass("fixed-logoMenu");
   }
-
-  //get current section
-  if((windowScrollTop >= $('#home').position().top -100 && windowScrollTop < $('#services').position().top - 100) || windowScrollTop == 0) {
-    currentSection = 'home';
-  }else if(windowScrollTop >= $('#services').position().top - 100 && windowScrollTop < $('#projects').position().top -100){
-    currentSection = 'services';
-  }else if(windowScrollTop >= $('#projects').position().top - 100 && windowScrollTop < $('#about-us').position().top -100){
-    currentSection = 'projects';
-  }else if(windowScrollTop >= $('#about-us').position().top - 100 && windowScrollTop < $('#contact').position().top -500){
-    currentSection = 'about-us';
-  }else{
-    currentSection = 'contact';
-  }
-
-  changeOptionSelected();
 }
 
 function mentors_resize() {
