@@ -210,6 +210,14 @@ $(window).on('load',function(){
     }
   });
 
+  $('#faq .questions-list li').hover(
+    function() {
+      $(this).find('.collapse').collapse('show');
+    }, function() {
+      $(this).find('.collapse').collapse('hide');
+    }
+  );
+
   $("#contact-submit1").on('click',function() {
     var $contact_form = $('#contact-form');
     var fields = $contact_form.serialize();
