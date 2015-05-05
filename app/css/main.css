@@ -534,7 +534,7 @@ body.contact #sections {
 }
 
 #projects .project-content {
-  margin: 5px;
+  margin: 3px;
   float: left;
   overflow: hidden;
   position: relative;
@@ -550,7 +550,6 @@ body.contact #sections {
 }
 
 #projects .project-content h3 {
-   text-transform: uppercase;
    text-align: center;
    position: relative;
    font-size: 16px;
@@ -581,7 +580,8 @@ body.contact #sections {
 }
 
 #projects .project-content .project-mask .projectS-mask-info{
-  padding-left: 90px;
+  text-align: right;
+  padding-right: 15px;
 }
 
 #projects .project-content a.project-mask-info {
@@ -592,7 +592,7 @@ body.contact #sections {
 }
 
 #projects .project-content a.project-mask-info:hover {
-   color: #000;
+   color: #F8B001;
 }
 
 #projects .call {

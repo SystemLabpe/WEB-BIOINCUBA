@@ -6,7 +6,7 @@ var currentPart = 'home';
 
 var currentSection = 'home';
 
-var mentors_slider = $('.mentors-slider').bxSlider({
+/*var mentors_slider = $('.mentors-slider').bxSlider({
   auto: true,
   autoDelay: 1000,
   slideWidth: 220,
@@ -14,7 +14,7 @@ var mentors_slider = $('.mentors-slider').bxSlider({
   maxSlides: 5,
   moveSlides: 1,
   slideMargin: 10
-});
+});*/
 
 $('.testimonials-slider').bxSlider({
   auto: true,
@@ -50,19 +50,24 @@ function onchangeSection(){
   }else if(windowScrollTop >= $('#testimonials').position().top - 100 && windowScrollTop < $('#projects').position().top -100){
     currentPart = 'services';
     currentSection = 'testimonials';
-  }else if(windowScrollTop >= $('#projects').position().top - 100 && windowScrollTop < $('#mentors').position().top -100){
+  }else if(windowScrollTop >= $('#projects').position().top - 100 && windowScrollTop < $('#about-us').position().top -100){
+    currentPart = 'projects';
+    currentSection = 'projects';
+  }
+  /*else if(windowScrollTop >= $('#projects').position().top - 100 && windowScrollTop < $('#mentors').position().top -100){
     currentPart = 'projects';
     currentSection = 'projects';
   }else if(windowScrollTop >= $('#mentors').position().top - 100 && windowScrollTop < $('#about-us').position().top -100){
     currentPart = 'projects';
     currentSection = 'mentors';
-  }else if(windowScrollTop >= $('#about-us').position().top - 100 && windowScrollTop < $('#faq').position().top -100){
+  }*/else if(windowScrollTop >= $('#about-us').position().top - 100 && windowScrollTop < $('#faq').position().top -100){
     currentPart = 'about-us';
     currentSection = 'about-us';
-  }else if(windowScrollTop >= $('#faq').position().top - 100 && windowScrollTop < $('#contact').position().top -500){
+  }else if(windowScrollTop >= $('#faq').position().top - 100 && windowScrollTop < $('#contact').position().top -300){
     currentPart = 'about-us';
     currentSection = 'faq';
   }else{
+    currentPart = 'contact';
     currentSection = 'contact';
   }
   changeOptionSelected();
@@ -83,7 +88,7 @@ function displayHeader() {
   }
 }
 
-function mentors_resize() {
+/*function mentors_resize() {
   var window_width = $(window).width();
   //behavior for mentors-slider
   if(window_width>991){
@@ -119,7 +124,7 @@ function mentors_resize() {
       slideMargin: 10
     });
   }
-}
+}*/
 
 $( window ).scroll(function() {
   displayHeader();
@@ -128,7 +133,7 @@ $( window ).scroll(function() {
 
 $( window ).resize(function() {
   displayHeader();
-  mentors_resize();
+  /*mentors_resize();*/
 });
 
 $(window).on('load',function(){
@@ -176,6 +181,26 @@ $(window).on('load',function(){
   });
 
   $('#home a[href^="#"]').on('click', function(e) {
+    var target = $(this.hash);
+    if( target.length ) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: target.offset().top
+        }, 1500);
+    }
+  });
+
+  $('#services a[href^="#"]').on('click', function(e) {
+    var target = $(this.hash);
+    if( target.length ) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: target.offset().top
+        }, 1500);
+    }
+  });
+
+  $('#projects a[href^="#"]').on('click', function(e) {
     var target = $(this.hash);
     if( target.length ) {
         e.preventDefault();
@@ -261,6 +286,6 @@ $(window).on('load',function(){
 
   changeBackground();
   displayHeader();
-  mentors_resize();
+  /*mentors_resize();*/
 
 });
