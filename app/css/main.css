@@ -339,7 +339,7 @@ body.contact #sections {
   background-color: #FFFFFF;
   color: #0097AC;
   overflow: hidden;
-  height: 200px;
+  height: 220px;
   width: 1%;
   padding: 10px;
   vertical-align: middle;
@@ -826,6 +826,23 @@ body.contact #sections {
   -ms-transition: all 0.1s linear 0s;
   -o-transition: all 0.1s linear 0s;
   transition: all 0.1s linear 0s;
+}
+
+#faq .questions-list .answer-list {
+  list-style: none;
+  padding: 0 30px;
+  font-size: 16px;
+  text-align: left;
+  letter-spacing: 0.4px;
+}
+
+#faq .questions-list .answer-list li {
+  margin-bottom: 5px;
+}
+
+#faq .questions-list .answer-list li:before {
+  content: "• ";
+  color: #F8B001;
 }
 
 #faq .questions-list .accordionize {
