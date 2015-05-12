@@ -282,7 +282,7 @@ body.contact #sections {
 }
 
 #processes .process {
-  height: 630px;
+  height: 650px;
   max-width: 500px;
   margin: 0 auto 30px;
   background-color: #FFFFFF;
@@ -935,4 +935,9 @@ body.contact #sections {
 .copyright {
   display: block;
   font-size: 14px;
+}
+
+.copyright a {
+  color: #FFFFFF;
+  text-decoration: none;
 }
