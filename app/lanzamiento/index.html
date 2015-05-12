@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Mobile Specifics -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="HandheldFriendly" content="true"/>
+  <meta name="MobileOptimized" content="320"/>
+
+  <!-- Mobile Internet Explorer ClearType Technology -->
+  <!--[if IEMobile]>  <meta http-equiv="cleartype" content="on">  <![endif]-->
+
+  <title>BioIncuba</title>
+  <link rel="stylesheet" href="bootstrap.min.css"/>
+  <link rel="stylesheet" href="main.css"/>
+  <script src="jquery.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+  <script src="jquery.countdown.min.js"></script>
+</head>
+<body>
+<div id="background"></div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-xs-8">
+      <img src="img/logo.png" class="img-responsive logo">
+      <h1>Estamos trabajando muy duro en la nueva versión de nuestro sitio web.</h1>
+      <!--
+      <h2>Lanzamiento</h2>
+      <div id="countdown"></div>
+      -->
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+   $("#countdown").countdown("2015/04/16", function(event) {
+     $(this).text(
+       event.strftime('%D día%!D %-H:%M:%S')
+     );
+   });
+</script>
+</body>
+</html>

@@ -311,10 +311,12 @@ body.contact #sections {
 
 #processes li {
   padding-bottom: 10px;
+  padding: 0 0 20px 5px;
   color: #4C4C4C;
 }
 
 #processes li:before {
+  margin-left: -13px;
   content: "• ";
   color: #F8B001;
 }

@@ -1,0 +1,4 @@
+#RewriteEngine on
+#RewriteCond %{HTTP_HOST} ^bioincuba\.com$ [OR]
+#RewriteCond %{HTTP_HOST} ^www\.bioincuba\.com$
+#RewriteRule ^/?$ "http\:\/\/www\.bioincuba\.com\/bioincuba" [R=301,L]
