@@ -231,6 +231,7 @@ $(window).on('load',function(){
 
         if(response.status){
           $('#contact-form input').val('');
+          $('#contact-form textarea').val('');
         }
 
         $('#response').empty().html(response.html);
@@ -240,7 +241,7 @@ $(window).on('load',function(){
   });
 
   $("#contact-submit2").on('click',function() {
-    var $contact_form = $('#contact-form');
+    var $contact_form = $('#contact-form2');
     var fields = $contact_form.serialize();
 
     $.ajax({
@@ -251,10 +252,11 @@ $(window).on('load',function(){
       success: function(response) {
 
         if(response.status){
-          $('#contact-form input').val('');
+          $('#contact-form2 input').val('');
+          $('#contact-form2 textarea').val('');
         }
 
-        $('#response').empty().html(response.html);
+        $('#response2').empty().html(response.html);
       }
     });
     return false;
