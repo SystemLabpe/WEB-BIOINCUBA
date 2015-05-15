@@ -1,0 +1,895 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Mobile Specifics -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="HandheldFriendly" content="true"/>
+  <meta name="MobileOptimized" content="320"/>
+
+  <!-- Mobile Internet Explorer ClearType Technology -->
+  <!--[if IEMobile]>  <meta http-equiv="cleartype" content="on">  <![endif]-->
+
+  <title>BioIncuba</title>
+  <!-- build:css css/style.min.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="lib/normalize.css/normalize.css" />
+  <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.css" />
+  <link rel="stylesheet" href="lib/bxslider-4/jquery.bxslider.css" />
+  <!-- endbower -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="/css/elastic_grid.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+  <!-- endinject -->
+  <!-- endbuild -->
+  <link rel="shortcut icon" href="img/favicon-16.ico">
+</head>
+<body>
+   <!-- Header -->
+  <header id="menu" class="menu">
+
+    <!-- Logo -->
+    <a href="#home" id="logoMenu" class="logoMenu">
+    </a>
+
+    <!-- Nav -->
+    <nav>
+      <ul>
+        <li><a href="#services">SERVICIOS</a></li>
+        <li><a href="#projects">STARTUPS</a></li>
+        <li><a href="#about-us">CONÓCENOS</a></li>
+        <li><a href="#contact">CONTACTO</a></li>
+      </ul>
+    </nav>
+
+    <!-- Toggle -->
+    <i id="toggle" class="fa"></i>
+
+  </header>
+  <!--  Background IMG -->
+  <div id="background"></div>
+  <!-- Sections -->
+  <section id="home" data-class="home">
+    <div class="container">
+      <div class="row home-content">
+        <div id="home-content">
+        <div class="col-md-6 col-sm-push-6 col-sm-6 home-column">
+          <img src="img/logo-home.png" class="img-responsive home-logo">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1 col-xs-12">
+              <h1><em class="italic">“</em>Conocimiento<br><span class="pull-right">que crea valor<em class="italic">”</em></span></h1>
+            </div>
+            <div class="row buttons">
+                <div class="col-md-6 col-xs-6 text-center">
+                  <a href="#projects" class="btn btn-bio btn-blue">STARTUPS</a>
+                </div>
+                <div class="col-md-6 col-xs-6 text-center">
+                  <a href="#contact" class="btn btn-bio btn-blue">ASESORÍAS</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-pull-6 col-sm-6 home-column">
+          <div class="col-md-8 contact-form">
+            <p>!Haz tu <strong>STARTUP</strong> una realidad!</p>
+            <a href="files/form.docx" download="Formulario.docx" class="btn btn-bio btn-grey col-md-12">FORMULARIO</a>
+            <form id="contact-form">
+              <p>Escríbenos para brindarte la ayuda necesaria, responder tus dudas y consultas.</p>
+              <input id="contact_name" type="text" class="form-control" placeholder="Nombre" name="name">
+              <input id="contact_email" type="mail" class="form-control" placeholder="Correo" name="email">
+              <input id="phone" type="text" class="form-control" placeholder="Celular" name="phone">
+              <textarea id="message" name="message" class="form-control" rows="4" placeholder="Consulta"></textarea>
+              <p id="response"></p>
+              <button id="contact-submit1" class="btn btn-bio btn-orange col-md-12">ENVIAR</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div id="sections">
+    <section id="processes" data-class="processes">
+      <div class="container">
+        <div class="row">
+          <h2>Servicios <br>al Emprendedor</h2>
+        </div>
+        <div class="row processes">
+          <div class="col-md-4">
+            <div class="process">
+              <h3>Pre Incubación</h3>
+              <img src="img/processes/pro-1.png" class="img-responsive">
+              <div class="row">
+              <ul class="col-md-12">
+                <li>Diseñar o mejorar su modelo de negocios.</li>
+                <li>Capacitar al e quipo emprendedor:
+                  fomentar su cohesión, poner a prueba el compromiso del equipo y su adecuación a las necesidades del proyecto.</li>
+                <li>Preparar al equipo en el desarrollo de presentaciones efectivas.</li>
+                <li>Presentación de su proyecto ante el Comité de Selección de Emprendimientos de BIOINCUBA.</li>
+              </ul>
+            </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="process">
+              <h3>Incubación</h3>
+              <img src="img/processes/pro-2.png" class="img-responsive">
+              <div class="row">
+                <ul class="col-md-12">
+                  <li>Asesoría, capacitación, generación de entorno.</li>
+                  <li>Acceso a redes y networking.</li>
+                  <li>Mentoring, apoyo para la obtención de financiamiento e inversión.</li>
+                  <li>Apoyo para el inicio de las ventas.</li>
+                  <li>Disposición de espacio físico para el funcionamiento de  gestión y comercialización de los emprendimientos.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="process">
+              <h3>Aceleración</h3>
+              <img src="img/processes/pro-3.png" class="img-responsive">
+              <div class="row">
+                <ul class="col-md-12">
+                  <li>La aceleración de empresas comprende el incremento en la velocidad  de ejecución de las funciones directivas, comerciales, administrativas/financieras, tecnológicas y de recursos humanos de una empresa alineados a una serie de objetivos y estrategias de negocio en un espacio de tiempo determinado.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="services" data-class="services">
+      <div class="container">
+        <div class="row">
+          <h2>Asesorías<br>y Consultorías</h2>
+        </div>
+        <div class="row services">
+          <article class="col-md-4 col-sm-6">
+            <div class="service">
+              <img src="img/services/serv-1.png">
+              <div class="service-content">
+                <h3>
+                  REDACCIÓN DE PROYECTO PARA FONDOS NACIONALES E INTERNACIONALES
+                </h3>
+                <div class="mask">
+                  <h4>Redacción de proyecto para fondos nacionales e internacionales</h4>
+                  <p>Te asesoramos en la redacción de tu proyecto innovador para que puedas conseguir financiamiento.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="col-md-4 col-sm-6">
+            <div class="service">
+              <img src="img/services/serv-2.png">
+              <div class="service-content">
+                <h3>
+                USO DE SISTEMAS EN LÍNEA PARA FONDOS NACIONALES
+                </h3>
+                <div class="mask">
+                  <h4>Uso de sistemas en línea para fondos nacionales</h4>
+                  <p>Te capacitamos en el uso de los sistemas en línea para que puedas postular a través de estos.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="col-md-4 col-sm-6">
+            <div class="service">
+              <img src="img/services/serv-3.png">
+              <div class="service-content">
+                <h3>
+                MODELADO DE NEGOCIOS Y ELEVATOR PITCH
+                </h3>
+                <div class="mask">
+                  <h4>Modelado de negocios y elevator pitch</h4>
+                  <p>Te entrenamos y acompañamos para que hagas tu modelado de negocios y elevator pitch de alto impacto.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="col-md-4 col-sm-6">
+            <div class="service">
+              <img src="img/services/serv-4.png">
+              <div class="service-content">
+                <h3>
+                VALORACIÓN TECNOLÓGICA DESARROLLADA
+                </h3>
+                <div class="mask">
+                  <h4>Valoración tecnólogica desarrollada</h4>
+                  <p>Te apoyamos en la valoración de la(s) tecnología(s) de acuerdo al nivel de avance que esta(s) tenga(n).</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="col-md-4 col-sm-6">
+            <div class="service">
+              <img src="img/services/serv-5.png">
+              <div class="service-content">
+                <h3>
+                NEGOCIACIÓN ESTRATÉGICA
+                </h3>
+                <div class="mask">
+                  <h4>Negoción estratégica</h4>
+                  <p>Te asesoramos en cómo abordar estratégicamente las negociaciones para lograr tus objetivos planteados.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="col-md-4 col-sm-6">
+            <div class="service">
+              <img src="img/services/serv-6.png">
+              <div class="service-content">
+                <h3>
+                REGISTRO DE MARCA
+                </h3>
+                <div class="mask">
+                  <h4>Registro de marca</h4>
+                  <p>Te asesoramos en el proceso de registro del signo que sea apto para distinguir la marca de tu producto.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="col-md-4 col-sm-6">
+            <div class="service">
+              <img src="img/services/serv-7.png">
+              <div class="service-content">
+                <h3>
+                PROPIEDAD INTELECTUAL
+                </h3>
+                <div class="mask">
+                  <h4>Propiedad intelectual</h4>
+                  <p>Te asesoramos en el proceso de evaluar la pertinencia de hacer el registro de propiedad intelectual de tu producto o servicio, y las formas en las que se puede realizar la protección.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="col-md-4 col-sm-6">
+            <div class="service">
+              <img src="img/services/serv-8.png">
+              <div class="service-content">
+                <h3>
+                NETWORKING
+                </h3>
+                <div class="mask">
+                  <h4>Networking</h4>
+                  <p>Promovemos el networking para dar a conocer sus productos, conocer potenciales socios y/o clientes y acceder a personas de alto nivel (decisión makers).</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="col-md-4 col-sm-6">
+            <div class="service">
+              <img src="img/services/serv-9.png">
+              <div class="service-content">
+                <h3>
+                IDENTIFICACIÓN DE CAPITAL DE RIESGO ESPECIALIZADO
+                </h3>
+                <div class="mask">
+                  <h4>Identificación de capital de riesgo especializado</h4>
+                  <p>Te ayudamos en el proceso de búsqueda de financiamiento para el desarrollo de tu producto o servicio innovador.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="col-md-4 col-sm-6">
+            <div class="service">
+              <img src="img/services/serv-10.png">
+              <div class="service-content">
+                <h3>
+                CONSULTORÍAS ESPECIALIZADAS
+                </h3>
+                <div class="mask">
+                  <h4>Consultorías especializadas</h4>
+                  <p>Brindamos consultorías especializadas en temas relacionados a emprendimientos de base tecnológica en áreas de Ciencias de la Salud.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="col-md-8 col-sm-6">
+            <div class="call">
+              <p class="text-right">Potencializa tu STARTUP <br> con nuestras asesorías y servicios</p>
+              <a href="#contact" class="btn btn-bio btn-orange pull-right"> ASESORÍAS</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials" data-class="testimonials">
+      <div class="container">
+        <div class="row">
+          <h2>Testimonios</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="testimonials-slider">
+              <article class="slide testimonial">
+                 <h3>DROP</h4>
+                 <p>“En Bioincuba encontrarás lo que necesitas para emprender: un equipo de mentores expertos para guiarte en el inicio de tu emprendimiento, un gran grupo humano de colaboradores que siempre están dispuestos a brindar su ayuda para que sigas creciendo y un fuerte lazo de unión y fraternidad para trabajar a gusto con tu idea”</p>
+                <div class="testimonial-author">
+                  <img class="img-responsive testimonial-pic" src="img/mentors/man.jpg"></img>
+                  <p><strong>Tony Cuevas&nbsp;</strong>Fundador</p>
+               </div>
+              </article>
+              <article class="slide testimonial">
+                <h3>BIOFUTURO</h4>
+                <p>“El respaldo de BioIncuba sumo mucho a nuestro emprendimiento” </p>
+                <div class="testimonial-author">
+                  <img class="img-responsive testimonial-pic" src="img/mentors/man.jpg"></img>
+                  <p><strong>Cesar Loo&nbsp;</strong>Fundador</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" data-class="projects">
+      <div class="container">
+        <div class="row">
+          <h2>StartUps</h2>
+        </div>
+        <div class="row">
+          <ul id="filterOptions" class="filterOptions list-inline">
+            <li class="active"><a href="#" class="todos">Todos</a></li>
+            <li class=""><a href="#" class="pre-incubacion">Pre-incubaci&oacute;n</a></li>
+            <li class=""><a href="#" class="incubacion">Incubaci&oacute;n</a></li>
+            <li class=""><a href="#" class="aceleracion">Aceleraci&oacute;n</a></li>
+          </ul>
+        </div>
+        <div id="project-list" class="row project-list">
+          <article class="col-md-3 col-sm-6 project" data-id="1" data-type="pre-incubacion">
+            <div class="project-content">
+              <img src="img/projects/small/BERDERR.jpg" class="img-responsive"/>
+              <div class="project-mask">
+                <h3>Berderr</h3>
+                <ul class="list-group">
+                  <li><strong>Industria:</strong> TICs</li>
+                  <li><strong>Fundadores:</strong> Mario Gil</li>
+                  <li><strong>Inversi&oacute;n:</strong> Startup Perú y Capital propio</li>
+                  <!--<li><strong>Fecha de inicio:</strong> Srping 2013</li>-->
+                </ul>
+                <div class="projectS-mask-info">
+                  <a href="http://www.bederr.com/" target="_blank" class="project-mask-info"><i class="fa fa-globe"></i></a>
+                  <a href="https://www.facebook.com/bederrapp" target="_blank" class="project-mask-info"><i class="fa fa-facebook"></i></a>
+                  <a href="https://twitter.com/BederrApp" target="_blank" class="project-mask-info"><i class="fa fa-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="col-md-3 col-sm-6 project" data-id="2" data-type="pre-incubacion">
+            <div class="project-content">
+              <img src="img/projects/small/BIOFUTURO.jpg" class="img-responsive"/>
+              <div class="project-mask">
+                <h3>Biofuturo</h3>
+                <ul class="list-group">
+                  <li><strong>Industria:</strong> Biotecnología</li>
+                  <li><strong>Fundadores:</strong> Cesar Loo y Carlos del Aguila</li>
+                  <li><strong>Inversi&oacute;n:</strong> Capital propio</li>
+                  <!--<li><strong>Fecha de inicio:</strong> Srping 2013</li>-->
+                </ul>
+                <div class="projectS-mask-info">
+                  <a href="http://www.celulasmadre.com.pe" target="_blank" class="project-mask-info"><i class="fa fa-globe"></i></a>
+                  <a href="https://www.facebook.com/pages/BioFab/281973928673924" target="_blank" class="project-mask-info"><i class="fa fa-facebook"></i></a>
+                  <a href="https://twitter.com/BioFabCesarLoo" target="_blank" class="project-mask-info"><i class="fa fa-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="col-md-3 col-sm-6 project" data-id="3" data-type="pre-incubacion">
+            <div class="project-content">
+              <img src="img/projects/small/BIONDI.jpg" class="img-responsive"/>
+              <div class="project-mask">
+                <h3>Biondi</h3>
+                <ul class="list-group">
+                  <li><strong>Industria:</strong> Biondi y Cia de Tacna SAC</li>
+                  <li><strong>Fundadores:</strong> Antonio Biondi</li>
+                  <li><strong>Inversi&oacute;n:</strong> Startup Perú y Capital propio</li>
+                  <li><strong>Fecha de inicio:</strong> Diciembre 1982</li>
+                </ul>
+                <div class="projectS-mask-info">
+                  <a href="http://www.olivosbiondi.com" target="_blank" class="project-mask-info"><i class="fa fa-globe"></i></a>
+                  <!--<a href="" target="_blank" class="project-mask-info"><i class="fa fa-facebook"></i></a>
+                  <a href="" target="_blank" class="project-mask-info"><i class="fa fa-twitter"></i></a>-->
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="col-md-3 col-sm-6 project" data-id="4" data-type="pre-incubacion">
+            <div class="project-content">
+              <img src="img/projects/small/FRACTALUP.jpg" class="img-responsive"/>
+              <div class="project-mask">
+                <h3>FractalUp</h3>
+                <ul class="list-group">
+                  <li><strong>Industria:</strong> Educación, BigData, EdTech</li>
+                  <li><strong>Fundadores:</strong> Lester Vargas, Ryan Vargas y Marcos Vargas</li>
+                  <li><strong>Inversi&oacute;n:</strong> Startup Perú y Capital propio</li>
+                  <li><strong>Fecha de inicio:</strong> Setiembre 2014</li>
+                </ul>
+                <div class="projectS-mask-info">
+                  <a href="http://www.fractalup.com" target="_blank" class="project-mask-info"><i class="fa fa-globe"></i></a>
+                  <a href="https://www.facebook.com/FractalUp" target="_blank" class="project-mask-info"><i class="fa fa-facebook"></i></a>
+                  <a href="https://twitter.com/FractalUp" target="_blank" class="project-mask-info"><i class="fa fa-twitter"></i></a>
+                  <a href="https://www.linkedin.com/company/fractalup" target="_blank" class="project-mask-info"><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="col-md-3 col-sm-6 project" data-id="5" data-type="pre-incubacion">
+            <div class="project-content">
+              <img src="img/projects/small/GOAMBU.jpg" class="img-responsive"/>
+              <div class="project-mask">
+                <h3>Go Ambu</h3>
+                <ul class="list-group">
+                  <li><strong>Industria:</strong> Tecnología y Salud</li>
+                  <li><strong>Fundadores:</strong> Alfonso Bedoya, Vanessa Alvarado y Christopher Laurente</li>
+                  <li><strong>Inversi&oacute;n:</strong> Startup Perú y Capital propio</li>
+                  <li><strong>Fecha de inicio:</strong> Julio 2014</li>
+                </ul>
+                <div class="projectS-mask-info">
+                  <a href="http://www.goambu.com" target="_blank" class="project-mask-info"><i class="fa fa-globe"></i></a>
+                  <a href="https://www.facebook.com/GoAmbu" target="_blank" class="project-mask-info"><i class="fa fa-facebook"></i></a>
+                  <a href="https://twitter.com/Go_Ambu" target="_blank" class="project-mask-info"><i class="fa fa-twitter"></i></a>
+                  <a href="https://www.youtube.com/channel/UC0NPesBny_tlxSl7b1lNIwQ/feed" target="_blank" class="project-mask-info"><i class="fa fa-youtube"></i></a>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="col-md-3 col-sm-6 project" data-id="6" data-type="pre-incubacion">
+            <div class="project-content">
+              <img src="img/projects/small/QUIMICA VERDE.jpg" class="img-responsive"/>
+              <div class="project-mask">
+                <h3>Quimica Verde</h3>
+                <ul class="list-group">
+                  <li><strong>Industria:</strong> Quimica</li>
+                  <li><strong>Fundadores:</strong> Jorge Salas, Rosa Martell y Giannina Guerrero</li>
+                  <li><strong>Inversi&oacute;n:</strong> Startup Perú y Capital propio</li>
+                  <li><strong>Fecha de inicio:</strong> Marzo 2014</li>
+                </ul>
+                <div class="projectS-mask-info">
+                  <!--<a href="" target="_blank" class="project-mask-info"><i class="fa fa-globe"></i></a>-->
+                  <a href="https://www.facebook.com/productosdelimpiezasamclean" target="_blank" class="project-mask-info"><i class="fa fa-facebook"></i></a>
+                  <!--<a href="" target="_blank" class="project-mask-info"><i class="fa fa-twitter"></i></a>-->
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="col-md-3 col-sm-6 project" data-id="7" data-type="pre-incubacion">
+            <div class="project-content">
+              <img src="img/projects/small/PERU GRAINS.jpg" class="img-responsive"/>
+              <div class="project-mask">
+                <h3>Peruvian Grains</h3>
+                <ul class="list-group">
+                  <li><strong>Industria:</strong> Comidas y Bebidas</li>
+                  <li><strong>Fundadores:</strong> Carlos Franco, Jimena Mora, Miguel Angel Cajahuanca</li>
+                  <li><strong>Inversi&oacute;n:</strong> Capital propio</li>
+                  <li><strong>Fecha de inicio:</strong> Junio 2014</li>
+                </ul>
+                <div class="projectS-mask-info">
+                  <a href="http://www.perugrains.com" target="_blank" class="project-mask-info"><i class="fa fa-globe"></i></a>
+                  <a href="https://www.facebook.com/pages/BioFab/281973928673924" target="_blank" class="project-mask-info"><i class="fa fa-facebook"></i></a>
+                  <a href="https://twitter.com/BioFabCesarLoo" target="_blank" class="project-mask-info"><i class="fa fa-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="col-md-3 col-sm-6 project" data-id="8" data-type="pre-incubacion">
+            <div class="project-content">
+              <img src="img/projects/small/SANAMAKINA.jpg" class="img-responsive"/>
+              <div class="project-mask">
+                <h3>Sana Makina</h3>
+                <ul class="list-group">
+                  <li><strong>Industria:</strong> Alimentos</li>
+                  <li><strong>Fundadores:</strong> Kristina Veleva</li>
+                  <li><strong>Inversi&oacute;n:</strong> Startup Perú y Capital propio</li>
+                  <li><strong>Fecha de inicio:</strong> Srping 2013</li>
+                </ul>
+                <div class="projectS-mask-info">
+                  <a href="http://sanamakina.com/" target="_blank" class="project-mask-info"><i class="fa fa-globe"></i></a>
+                  <a href="https://www.facebook.com/Sanamakina" target="_blank" class="project-mask-info"><i class="fa fa-facebook"></i></a>
+                  <a href="https://twitter.com/sanamakina" target="_blank" class="project-mask-info"><i class="fa fa-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="col-md-3 col-sm-6 project" data-id="9" data-type="pre-incubacion">
+            <div class="project-content">
+              <img src="img/projects/small/NEOLOGICAL.jpg" class="img-responsive"/>
+              <div class="project-mask">
+                <h3>Neological</h3>
+                <ul class="list-group">
+                  <li><strong>Industria:</strong> Manufactura</li>
+                  <li><strong>Fundadores:</strong> Diego León y Marco Lopez </li>
+                  <li><strong>Inversi&oacute;n:</strong> Capital propio</li>
+                  <li><strong>Fecha de inicio:</strong> Marzo 2014</li>
+                </ul>
+                <div class="projectS-mask-info">
+                  <a href="http://www.neoecological.com" target="_blank" class="project-mask-info"><i class="fa fa-globe"></i></a>
+                  <a href="https://www.facebook.com/neoecological" target="_blank" class="project-mask-info"><i class="fa fa-facebook"></i></a>
+                  <!--<a href="" target="_blank" class="project-mask-info"><i class="fa fa-twitter"></i></a>-->
+                </div>
+              </div>
+            </div>
+          </article>
+           <article class="col-md-3 col-sm-6 project" data-id="12" data-type="pre-incubacion">
+            <div class="project-content">
+              <img src="img/projects/small/BIONOMA.jpg" class="img-responsive"/>
+              <div class="project-mask">
+                <h3>Bionoma</h3>
+                <ul class="list-group">
+                  <li><strong>Industria:</strong> Biotecnología</li>
+                  <li><strong>Fundadores:</strong> José Espinoza</li>
+                  <li><strong>Inversi&oacute;n:</strong> Capital propio</li>
+                  <!--<li><strong>Fecha de inicio:</strong> Capital propio</li>-->
+                </ul>
+
+                <div class="projectS-mask-info">
+                  <a href="http://www.bionima.com.pe" target="_blank" class="project-mask-info"><i class="fa fa-globe"></i></a>
+                <!--  <a href="" target="_blank" class="project-mask-info"><i class="fa fa-facebook"></i></a>
+                  <a href="" target="_blank" class="project-mask-info"><i class="fa fa-twitter"></i></a>-->
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="col-md-3 col-sm-6 project" data-id="13" data-type="pre-incubacion">
+            <div class="project-content">
+              <img src="img/projects/small/MILIBRO.jpg" class="img-responsive"/>
+              <div class="project-mask">
+                <h3>Milibro</h3>
+                <ul class="list-group">
+                  <li><strong>Industria:</strong> Educación y TICs</li>
+                  <li><strong>Fundadores:</strong> David Requena y Michael Lázaro</li>
+                  <li><strong>Inversi&oacute;n:</strong> Capital propio</li>
+                  <li><strong>Fecha de inicio:</strong> 01/01/2015</li>
+                </ul>
+                <!--
+                <div class="projectS-mask-info">
+                  <a href="" target="_blank" class="project-mask-info"><i class="fa fa-globe"></i></a>
+                  <a href="" target="_blank" class="project-mask-info"><i class="fa fa-facebook"></i></a>
+                  <a href="" target="_blank" class="project-mask-info"><i class="fa fa-twitter"></i></a>
+                </div>
+              -->
+              </div>
+            </div>
+          </article>
+          <article class="col-md-3 col-sm-6 project" data-id="10" data-type="pre-incubacion">
+            <div class="project-content">
+              <img src="img/projects/small/FILIUM.jpg" class="img-responsive"/>
+              <div class="project-mask">
+                <h3>Filium</h3>
+                <ul class="list-group">
+                  <li><strong>Industria:</strong> Tecnología y Salud</li>
+                  <li><strong>Fundadores:</strong> Alejandro Mayta</li>
+                  <li><strong>Inversi&oacute;n:</strong> Startup Perú y Capital propio</li>
+                  <!--<li><strong>Fecha de inicio:</strong> </li>-->
+                </ul>
+                <!--
+                <div class="projectS-mask-info">
+                  <a href="" target="_blank" class="project-mask-info"><i class="fa fa-globe"></i></a>
+                  <a href="" target="_blank" class="project-mask-info"><i class="fa fa-facebook"></i></a>
+                  <a href="" target="_blank" class="project-mask-info"><i class="fa fa-twitter"></i></a>
+                </div>
+              -->
+              </div>
+            </div>
+          </article>
+           <article class="col-md-3 col-sm-6 project" data-id="11" data-type="pre-incubacion">
+            <div class="project-content">
+              <img src="img/projects/small/PRE INCUBACION.png" class="img-responsive"/>
+              <div class="project-mask">
+                <h3>Biocomercio Sostenible</h3>
+                <ul class="list-group">
+                  <li><strong>Industria:</strong> Comercio</li>
+                  <li><strong>Fundadores:</strong> Walter Cárdenas</li>
+                  <li><strong>Inversi&oacute;n:</strong> Startup Perú y Capital propio</li>
+                  <!--<li><strong>Fecha de inicio:</strong> Startup Perú y Capital propio</li>-->
+                </ul>
+                <!--
+                <div class="projectS-mask-info">
+                  <a href="" target="_blank" class="project-mask-info"><i class="fa fa-globe"></i></a>
+                  <a href="" target="_blank" class="project-mask-info"><i class="fa fa-facebook"></i></a>
+                  <a href="" target="_blank" class="project-mask-info"><i class="fa fa-twitter"></i></a>
+                </div>
+              -->
+              </div>
+            </div>
+          </article>
+           <article class="col-md-3 col-sm-6 project" data-id="13" data-type="pre-incubacion">
+            <div class="project-content">
+              <img src="img/projects/small/PRE INCUBACION.png" class="img-responsive"/>
+              <div class="project-mask">
+                <h3>Yanapax</h3>
+                <ul class="list-group">
+                  <li><strong>Industria:</strong> Realidad Virtual y Salud</li>
+                  <li><strong>Fundadores:</strong> Erick Loo, Paulo Flores, Ruben Polo, Gonzalo Díaz</li>
+                  <li><strong>Inversi&oacute;n:</strong> Capital propio</li>
+                  <li><strong>Fecha de inicio:</strong> Startup Perú y Capital propio</li>
+                </ul>
+                <!--
+                <div class="projectS-mask-info">
+                  <a href="" target="_blank" class="project-mask-info"><i class="fa fa-globe"></i></a>
+                  <a href="" target="_blank" class="project-mask-info"><i class="fa fa-facebook"></i></a>
+                  <a href="" target="_blank" class="project-mask-info"><i class="fa fa-twitter"></i></a>
+                </div>
+              -->
+              </div>
+            </div>
+          </article>
+           <article class="col-md-3 col-sm-6 project" data-id="14" data-type="incubacion">
+            <div class="project-content">
+              <img src="img/projects/small/INCUBACION.png" class="img-responsive"/>
+              <div class="project-mask">
+                <h3>En proceso!</h3>
+                <!--
+                <ul class="list-group">
+                  <li><strong>Industria:</strong> Realidad Virtual y Salud</li>
+                  <li><strong>Fundadores:</strong> Erick Loo, Paulo Flores, Ruben Polo, Gonzalo Díaz</li>
+                  <li><strong>Inversi&oacute;:</strong> Capital propio</li>
+                  <li><strong>Fecha de inicio:</strong> Startup Perú y Capital propio</li>
+                </ul>
+                <div class="projectS-mask-info">
+                  <a href="" target="_blank" class="project-mask-info"><i class="fa fa-globe"></i></a>
+                  <a href="" target="_blank" class="project-mask-info"><i class="fa fa-facebook"></i></a>
+                  <a href="" target="_blank" class="project-mask-info"><i class="fa fa-twitter"></i></a>
+                </div>
+              -->
+              </div>
+            </div>
+          </article>
+             <article class="col-md-3 col-sm-6 project" data-id="15" data-type="aceleracion">
+            <div class="project-content">
+              <img src="img/projects/small/ACELERACION.png" class="img-responsive"/>
+              <div class="project-mask">
+                <h3>En proceso!</h3>
+                <!--
+                <ul class="list-group">
+                  <li><strong>Industria:</strong> Realidad Virtual y Salud</li>
+                  <li><strong>Fundadores:</strong> Erick Loo, Paulo Flores, Ruben Polo, Gonzalo Díaz</li>
+                  <li><strong>Inversi&oacute;:</strong> Capital propio</li>
+                  <li><strong>Fecha de inicio:</strong> Startup Perú y Capital propio</li>
+                </ul>
+                <div class="projectS-mask-info">
+                  <a href="" target="_blank" class="project-mask-info"><i class="fa fa-globe"></i></a>
+                  <a href="" target="_blank" class="project-mask-info"><i class="fa fa-facebook"></i></a>
+                  <a href="" target="_blank" class="project-mask-info"><i class="fa fa-twitter"></i></a>
+                </div>
+              -->
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="call">
+            <p class="text-center">¡Forma parte de nuestra <br> red ahora!</p>
+            <a href="#contact" class="btn btn-bio btn-blue">Asesorías</a>
+        </div>
+      </div>
+    </section>
+    <!--
+    <section id="mentors" data-class="mentors">
+      <div class="container">
+        <div class="row">
+          <h2>Mentores</h2>
+        </div>
+        <div class="row">
+          <div class="mentors-slider">
+            <article class="slide mentor">
+               <img class="img-responsive mentor-pic" src="img/mentors/man.jpg"></img>
+                <h3>John Doe</h3>
+                <h4>Gerente general</h4>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+            </article>
+            <article class="slide mentor">
+               <img class="img-responsive mentor-pic" src="img/mentors/woman.jpg"></img>
+                <h3>Diana Perterse</h3>
+                <h4>Gerente general</h4>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+            </article>
+            <article class="slide mentor">
+               <img class="img-responsive mentor-pic" src="img/mentors/man.jpg"></img>
+                <h3>Larry Parker</h3>
+                <h4>Gerente general</h4>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+            </article>
+            <article class="slide mentor">
+               <img class="img-responsive mentor-pic" src="img/mentors/woman.jpg"></img>
+                <h3>Ashley Simmons</h3>
+                <h4>Gerente general</h4>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+            </article>
+            <article class="slide mentor">
+               <img class="img-responsive mentor-pic" src="img/mentors/man.jpg"></img>
+                <h3>John Doe 2</h3>
+                <h4>Gerente general</h4>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+            </article>
+            <article class="slide mentor">
+               <img class="img-responsive mentor-pic" src="img/mentors/woman.jpg"></img>
+                <h3>Diana Perterse 2</h3>
+                <h4>Gerente general</h4>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+            </article>
+            <article class="slide mentor">
+               <img class="img-responsive mentor-pic" src="img/mentors/man.jpg"></img>
+                <h3>Larry Parker 2</h3>
+                <h4>Gerente general</h4>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+            </article>
+            <article class="slide mentor">
+               <img class="img-responsive mentor-pic" src="img/mentors/woman.jpg"></img>
+                <h3>Ashley Simmons 2</h3>
+                <h4>Gerente general</h4>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+            </article>
+            <article class="slide mentor">
+               <img class="img-responsive mentor-pic" src="img/mentors/man.jpg"></img>
+                <h3>John Doe 3</h3>
+                <h4>Gerente general</h4>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+            </article>
+            <article class="slide mentor">
+               <img class="img-responsive mentor-pic" src="img/mentors/woman.jpg"></img>
+                <h3>Diana Perterse 3</h3>
+                <h4>Gerente general</h4>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    -->
+    <section id="about-us" data-class="about-us">
+      <!-- <div class="border-top"></div> -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>Conócenos</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <p>Somos los ganadores del concurso “Fortalecimiento de capacidades de Incubación”, financiado por el Ministerio de Producción, en el 2014.</p>
+            <p>Nos dedicamos a proporcionar asesoría técnica especializada en las investigaciones de ciencias de la vida, conservación del medio ambiente, innovación y desarrollo empresarial. Enfocados en mejorar la productividad y competitividad de nuestros clientes.</p>
+          </div>
+          <div class="col-md-6">
+            <div class="video-container">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/D4_wqtfbF-s" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+          <!-- <div class="col-md-6 directory">
+            <article class="col-md-3 col-sm-3 dir-member">
+              <img class="img-responsive" src="img/mentors/man.jpg">
+              <h3>Raymundo Morales</h3>
+              <h4>Presidente</h4>
+            </article>
+            <article class="col-md-3 col-sm-3 dir-member">
+              <img class="img-responsive" src="img/mentors/man.jpg">
+              <h3>Manuel Carrillo</h3>
+              <h4>Director</h4>
+            </article>
+            <article class="col-md-3 col-sm-3 dir-member">
+              <img class="img-responsive" src="img/mentors/woman.jpg">
+              <h3>Ana Gabriela Sobarzo</h3>
+              <h4>Gerente General</h4>
+            </article>
+            <article class="col-md-3 col-sm-3 dir-member">
+              <img class="img-responsive" src="img/mentors/man.jpg">
+              <h3>Manuel Carrilo</h3>
+              <h4>Director</h4>
+            </article>
+            <article class="col-md-3 col-sm-3 dir-member">
+              <img class="img-responsive" src="img/mentors/woman.jpg">
+              <h3>Ana Gabriela Sobarzo</h3>
+              <h4>Gerente General</h4>
+            </article>
+          </div>-->
+        </div>
+      </div>
+    </section>
+    <section id="faq" data-class="faq">
+      <div class="container">
+        <div class="row">
+          <h2>Como te ayudamos</h2>
+        </div>
+        <div class="row questions">
+          <ul class="questions-list list-inline col-md-12" id="accordion">
+            <li class="panel col-md-12 col-xs-12">
+              <div class="accordionize">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#qone">¿Bioincuba sólo se dedica a la Incubación de empresas?</a>
+              </div>
+              <div id="qone" class="collapse"><p>No, Bioincuba SAC es una empresa de la UPCH que tiene tres focos de desarrollo a) La comercialización de tecnologías desarrolladas por instituciones de educación superior, personas naturales y empresas; b) Desarrollo de consultorías especializadas y c) emprendimiento de Base tecnológica.</p></div>
+            </li>
+            <li class="panel col-md-12 col-xs-12">
+              <div class="accordionize">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#qtwo">¿Qué son las incubadoras de empresas?</a>
+              </div>
+              <div id="qtwo" class="collapse"><p>Las incubadoras forman parte del sistema nacional de innovación y apoyan el desarrollo de empresas nuevas, ayudándoles a sobrevivir y crecer durante el período temprano de emprendimiento, en el momento que son más vulnerables.</p></div>
+            </li>
+            <li class="panel col-md-12 col-xs-12">
+              <div class="accordionize">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#qthree">¿Cómo las incubadoras ayudan a los emprendedores a conseguir financiamiento?</a>
+              </div>
+              <div id="qthree" class="collapse"><p>Las incubadoras ayudan a los emprendedores a:
+                <ul class="answer-list">
+                  <li>Postular sus proyectos en programas de financiamientos estatales (Start Up – Innovate, PIPEI y/o PIMEN).</li>
+                  <li>Conectar a los emprendedores y  empresas en edad temprana  con inversionistas, adecuados para el nivel  de desarrollo.</li>
+                  <li>Preparar y mejorar la forma de presentar sus proyectos ante distintas fuentes de financiamiento.</li>
+                </ul>
+              </p></div>
+            </li>
+            <li class="panel col-md-12 col-xs-12">
+              <div class="accordionize">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#qfour">¿Qué es el proceso de incubación?</a>
+              </div>
+              <div id="qfour" class="collapse"><p>Es un programa de talleres, charlas y mentoria diseñado para acelerar el desarrollo exitoso de empresas de nuevas tecnologías. Los servicios pueden incluir un espacio físico subsidiado para operar un negocio, asesoría financiera, el acceso a fuentes adicionales de financiación, asesoramiento y / o asistencia con iniciativas económicas privadas y estatales, el acceso a expertos universitarios / de investigación y entrenamiento para presentaciones de negocios. Propiedad intelectual, modelo de negocio, entre otros y el desarrollo de Networking a fin de conectar a sus incubandos con a personas y los recursos necesarios para el éxito.</p></div>
+            </li>
+            <li class="panel col-md-12 col-xs-12">
+              <div class="accordionize">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#qfive">¿Qué tipo de idea o empresa califican para entrar a Bioincuba y que valor recibiría?</a>
+              </div>
+              <div id="qfive" class="collapse"><p>Las ideas o empresas sobre las que Bioincuba se enfoca, son aquellas relacionadas con productos tecnológicos provenientes de la investigación, pudiendo venir de un alumno, profesor o persona natural. Esta puede darse en los campos de ciencias de la vida y medio ambiente como salud, agricultura, nutrición y entre otras. Les brindamos servicios de asesorías y contactos en el área tecnológica y comercial, con el respaldo de la Universidad Peruana Cayetano Heredia.</p></div>
+            </li>
+            <li class="panel col-md-12 col-xs-12">
+              <div class="accordionize">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#qsix">¿Mi idea/investigación para emprender se mantendrá segura?</a>
+              </div>
+              <div id="qsix" class="collapse"><p>Debido a la naturaleza de nuestros clientes, sus proyectos y los resultados de nuestra asistencia, debemos mantener la confidencialidad, con respecto a nuestro trabajo para ellos. Todos los clientes pueden permanecer seguros de que Bioincuba se ajustará a los altos estándares sobre los que descansa su reputación, ya que en la mayoría de los casos se firma un convenio de preincubación o incubación, que incluye una cláusula de confidencialidad.</p></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+  <section id="contact" data-class="contact">
+    <div class="container">
+      <div class="row contact-content">
+        <div class="col-md-6 contact-column contact-form">
+          <div class="col-md-8">
+            <p>!Haz tu <strong>STARTUP</strong> una realidad!</p>
+            <a href="files/form.docx" download="Formulario.docx" class="btn btn-bio btn-grey col-md-12">FORMULARIO</a>
+            <form id="contact-form2">
+              <p>Escríbenos para brindarte la ayuda necesaria, responder tus dudas y consultas.</p>
+              <input id="contact_name" type="text" class="form-control" placeholder="Nombre" name="name">
+              <input id="contact_email" type="mail" class="form-control" placeholder="Correo" name="email">
+              <input id="phone" type="text" class="form-control" placeholder="Celular" name="phone">
+              <textarea id="message" name="message" class="form-control" rows="4" placeholder="Consulta"></textarea>
+              <p id="response2"></p>
+              <button id="contact-submit2" class="btn btn-bio btn-orange col-md-12">ENVIAR</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-6 contact-column contact-info">
+          <h2>Ubícanos</h2>
+          <p>Calle Jose Antonio N°310 Urb. Camacho <br>
+            La Molina. Lima-Perú<br>
+            Teléfono: (511) 619 7700 anexo 3442</p>
+          <h3>Síguenos</h3>
+          <ul class="social-icons">
+            <li><a href="https://www.facebook.com/bioincuba" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/bioincubaperu" target="_blank"><i class="fa fa-twitter"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <span class="copyright text-center">© 2015 Bioincuba - Todos los derechos reservados <br> Desarrollo <a href="http://www.systemlab.com.pe" target="_blank">SYSTEMLAB</a> | Diseño y diagramación <a href="https://www.facebook.com/icreavisual" target="_blank">ICREAVISUAL</a></span>
+  </footer>
+  <!-- build:js js/vendor.min.js -->
+  <!-- bower:js -->
+  <script src="lib/jquery/dist/jquery.js"></script>
+  <script src="lib/modernizr/modernizr.js"></script>
+  <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="lib/bxslider-4/jquery.bxslider.js"></script>
+  <script src="lib/classie/classie.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:js js/app.min.js -->
+  <!-- inject:js -->
+  <script src="/js/main.js"></script>
+  <script src="/js/lib/jquery.easing.1.3.js"></script>
+  <script src="/js/lib/jquery.quicksand.js"></script>
+  <!-- endinject -->
+  <!-- endbuild -->
+</body>
+</html>
