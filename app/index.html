@@ -77,7 +77,8 @@
         <div class="col-md-6 col-sm-pull-6 col-sm-6 home-column">
           <div class="col-md-8 contact-form">
             <form id="contact-form">
-              <p>Escríbenos para brindarte la ayuda necesaria, responder tus dudas y consultas.</p>
+              <div class="row">
+              <p>Escríbenos para brindarte la ayuda necesaria, responder tus dudas y consultas.</p></div>
               <input id="contact_name" type="text" class="form-control" placeholder="Nombre" name="name">
               <input id="contact_email" type="mail" class="form-control" placeholder="Correo" name="email">
               <input id="phone" type="text" class="form-control" placeholder="Celular" name="phone">
@@ -843,18 +844,20 @@
     <div class="container">
       <div class="row contact-content">
         <div class="col-md-6 contact-column contact-form">
-          <div class="col-md-8">
-            <p>!Haz tu idea o negocio una realidad!</p>
-            <a href="files/Formulario.docx" download="Formulario.docx" class="btn btn-bio btn-blue col-md-12">DESCARGAR FORMULARIO</a>
-            <form id="contact-form2">
-              <p>Escríbenos para brindarte la ayuda necesaria, responder tus dudas y consultas.</p>
-              <input id="contact_name" type="text" class="form-control" placeholder="Nombre" name="name">
-              <input id="contact_email" type="mail" class="form-control" placeholder="Correo" name="email">
-              <input id="phone" type="text" class="form-control" placeholder="Celular" name="phone">
-              <textarea id="message" name="message" class="form-control" rows="4" placeholder="Consulta"></textarea>
-              <p id="response2"></p>
-              <button id="contact-submit2" class="btn btn-bio btn-orange col-md-12">ENVIAR</button>
-            </form>
+          <div class="row">
+            <div class="col-md-8">
+              <p>!Haz tu idea o negocio una realidad!</p>
+              <a href="files/Formulario.docx" download="Formulario.docx" class="btn btn-bio btn-blue col-md-12">DESCARGAR FORMULARIO</a>
+              <form id="contact-form2">
+                <p class="small">Escríbenos para brindarte la ayuda necesaria, responder tus dudas y consultas.</p>
+                <input id="contact_name" type="text" class="form-control" placeholder="Nombre" name="name">
+                <input id="contact_email" type="mail" class="form-control" placeholder="Correo" name="email">
+                <input id="phone" type="text" class="form-control" placeholder="Celular" name="phone">
+                <textarea id="message" name="message" class="form-control" rows="4" placeholder="Consulta"></textarea>
+                <p id="response2"></p>
+                <button id="contact-submit2" class="btn btn-bio btn-orange col-md-12">ENVIAR</button>
+              </form>
+            </div>
           </div>
         </div>
         <div class="col-md-6 contact-column contact-info">

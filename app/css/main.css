@@ -41,6 +41,10 @@ p {
   font-size: 18px;
 }
 
+p.small {
+  font-size: 17px;
+}
+
 /* ==================================================
   Buttons
 ================================================== */
@@ -88,7 +92,7 @@ p {
   Background
 ================================================== */
 #background {
-  background-image: url('../img/background2.jpg');
+  background-image: url('../img/background3.png');
   z-index: -1;
   position: fixed;
   top: 0;
@@ -875,6 +879,10 @@ body.contact #sections {
 
 #contact-form {
   margin-top: 40px;
+}
+
+#contact-form2 {
+  margin-top: 80px;
 }
 
 #contact .contact-content {

@@ -8,7 +8,7 @@ header('Cache-Control: no-cache, must-revalidate');
 header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
 header('Content-type: application/json');
 
-$admin_email = 'jmosquera92r@gmail.com'; // Your Email
+$admin_email = 'proyectos@bioincuba.com'; // Your Email
 $message_min_length = 20; // Min Message Length
 
 
