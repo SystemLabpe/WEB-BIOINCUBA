@@ -267,7 +267,7 @@ body.contact #sections {
 }
 
 .home-content .buttons {
-  margin: 150px 0 0;
+  margin: 180px 0 0;
 }
 
 .home-content .buttons div{
@@ -874,7 +874,7 @@ body.contact #sections {
 }
 
 #contact-form {
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 #contact .contact-content {
@@ -904,6 +904,13 @@ body.contact #sections {
   margin-bottom: 5px;
 }
 
+#response {
+  font-size: 21px;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
 #contact-submit1, #contact-submit2 {
   font-size: 18px;
   font-weight: bold;
@@ -927,6 +934,13 @@ body.contact #sections {
   text-align: center;
   color: #FFFFFF;
   color: rgba(255, 255, 255, 0.8);
+}
+
+#contact .logo-innovate {
+  margin-left: 5px;
+  display: inline-block;
+  max-height: 20px;
+  vertical-align: inherit;
 }
 
 /* ==================================================
