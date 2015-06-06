@@ -92,7 +92,7 @@ p.small {
   Background
 ================================================== */
 #background {
-  background-image: url('../img/background3.png');
+  /*background-image: url('../img/background3.png');*/
   z-index: -1;
   position: fixed;
   top: 0;
@@ -107,6 +107,12 @@ p.small {
   -o-background-size: cover;
   background-size: cover;
 }
+
+#background .bx-viewport  {
+  border:0;
+  left: 0px;
+}
+
 
 /* ==================================================
   Sections

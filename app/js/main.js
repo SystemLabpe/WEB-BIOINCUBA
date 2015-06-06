@@ -16,6 +16,13 @@ var currentSection = 'home';
   slideMargin: 10
 });*/
 
+$('.background-slider').bxSlider({
+  auto: true,
+  autoDelay: 1000,
+  pager: false,
+  controls: false
+});
+
 $('.testimonials-slider').bxSlider({
   auto: true,
   autoDelay: 1000,
